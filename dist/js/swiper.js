@@ -1,0 +1,1 @@
+const swiper=new Swiper(".swiper",{direction:"horizontal",slidesPerView:3,spaceBetween:150,loop:!0,pagination:{el:".swiper-pagination"}});

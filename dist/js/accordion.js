@@ -1,0 +1,1 @@
+document.querySelectorAll(".accordion").forEach(l=>{addEventListener("click",()=>{let e=l.nextElementSibling;console.log(e),e.style.maxHeight?document.querySelectorAll(".content").forEach(e=>e.style.maxHeight=null):document.querySelectorAll(".content").forEach(e=>e.style.maxHeight=null),e.style.maxHeight=e.scrollHeight+"px"})});

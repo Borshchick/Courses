@@ -1,0 +1,1 @@
+var header=$(".header"),scrollPrev=0;$(window).scroll(function(){var r=$(window).scrollTop();100<r&&scrollPrev<r?header.addClass("out"):header.removeClass("out"),scrollPrev=r});

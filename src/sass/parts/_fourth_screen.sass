@@ -1,0 +1,123 @@
+.fourth_screen_main_wrapper
+    margin-top: 100px
+.fourth_screen_info_wrapper
+    width: 70%
+    margin: 0 auto
+    display: flex
+    gap: 30px
+    justify-content: center
+    background-image: url('../../../img/chaos.png')
+    background-repeat: no-repeat 
+    background-position: center 20px
+    background-size: 90%
+    height: 260px
+    >div
+        >h2
+            color: #FF00A8
+            font-family: Cinzel Decorative
+            font-size: 40px
+            font-weight: 700
+        >p
+            font-family: Poppins
+            font-size: 20px
+            font-weight: 500
+    >div:nth-child(2)
+        position: relative
+        bottom:  50px
+.fourth_screen_title_wrapper
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    height: 300px
+    margin-top: 90px
+    background-image: url('../../../img/title_decoration.png')
+    background-repeat: no-repeat
+    background-position: center 0px
+    >h2
+        display: flex
+        justify-content: center
+        align-items: center
+        color: #FF00A8
+        font-family: Cinzel
+        font-size: 36px
+        font-weight: 700
+        margin-bottom: 50px
+    >button
+        background: linear-gradient(268.57deg, #FF00A8 27.31%, #BD00FF 109.82%)
+        border: none
+        border-radius: 50px
+        padding: 13px 40px
+        color: #FAF8F0
+        font-family: Poppins
+        font-size: 20px
+        font-weight: 600
+        width: 20%
+        margin: 10px auto  
+        &:hover
+            background: linear-gradient(268.57deg, #BD00FF 27.31%, #FF00A8 109.82%)
+            cursor: pointer
+            transition: background-image 0.5s linear
+.fourth_screen_logo_wrapper
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    margin-top: 40px
+    height: 200px
+    >h2
+        font-family: Cinzel Decorative
+        font-size: 48px
+        font-weight: 700
+        margin-bottom: 60px
+        margin-top: 40px 
+        padding: 25px 50px
+        background-image: url('../../../img/splash.png')
+        background-repeat: no-repeat 
+        background-position: 20px -2px
+    >p
+        width: 70%
+        margin: 0 auto
+        font-family: Poppins
+        font-weight: 500
+        font-size: 20px
+.fourth_screen_card_wrapper
+    margin-top: 200px
+    background-image: url('../../../img/arc.png')
+    background-repeat: no-repeat
+    background-position: center center
+    padding-bottom: 60px
+.forth_screen_main_card_wrapper
+    display: flex
+    justify-content: center
+    flex-direction: row
+    width: 70%
+    margin: 0 auto
+    gap: 30px
+    padding: 30px
+    width: max-content
+    background: #02091F
+    border-radius: 10px
+    >div
+        >h3
+            color: #FFAAE2
+            font-family: Cinzel
+            font-size: 20px
+            font-weight: 700
+        >div
+            width: 300px
+            >ul
+                >li
+                    color: #FFFFFF
+                    font-family: Poppins
+                    font-size: 16px
+                    font-weight: 300
+@media (min-width: 768px) and (max-width: 1024px)
+    .fourth_screen_title_wrapper
+        >h2
+            font-size: 30px
+        >button
+            font-size: 70%
+    .forth_screen_main_card_wrapper
+        width: 500px
+        flex-wrap: wrap

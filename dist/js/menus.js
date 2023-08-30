@@ -1,0 +1,1 @@
+$(document).ready(function(d){const o=d(".header");let a,n;d(window).on("scroll",function(){var e=d(window).scrollTop();30<e&&e>a?(o.addClass("header__hide"),n=e):e<=Math.max(n-250,0)&&o.removeClass("header__hide"),a=e})});

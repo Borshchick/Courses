@@ -1,0 +1,1 @@
+"use strict";document.addEventListener("DOMContentLoaded",function(){$(".marquee").marquee({duration:7e3,gap:50,delayBeforeStart:0,direction:"right",duplicated:!0})});
