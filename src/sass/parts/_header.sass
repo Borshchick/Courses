@@ -3,6 +3,7 @@
   background-size: cover
   background-repeat: no-repeat
   margin-bottom: 30px
+  background-position: center
 .header_main_wrapper
     background-image: url('../../../img/Noise.png')
     padding-top: 17px
@@ -39,43 +40,51 @@
             >a
                 color: #FAF8F0
                 text-decoration: none
+                &:active
+                    color: red
 .header_navigation_wrapper
     margin: 0 auto
 .header_content_wrapper
+    height: 100%
     display: flex
     flex-direction: column
+    justify-content: center
     align-items: center
 .header_content_wrapper
     margin-top: 120px
     background-image: url('../../../img/Rond.png')
     background-repeat: no-repeat
     background-position-x: 90%
-    background-position-y: 60%  
+    background-position-y: 90%
     
 .header_content
     display: flex
     flex-direction: column
     justify-content: center
     width: 700px
-    >div
+    &__text
         display: flex
         justify-content: center
-    >div:nth-child(1)
+    &__text:nth-child(1)
         color: #FFAAE2
         font-family: Cinzel
         font-size: 32px
         font-weight: 700
-    >h2
+    h2
         color: #FAF8F0
         font-size: 128px
         font-family: Cinzel Decorative
         font-weight: 400
-    >div:nth-child(3)
+    &__text:nth-child(3)
         color: #FAF8F0
         font-family: Poppins
         font-size: 20px
         font-weight: 500
-    >button
+        text-align: center
+        width: 561px
+        margin: 0 auto
+        margin-bottom: 20px
+    &__button
         background: linear-gradient(268.57deg, #FF00A8 27.31%, #BD00FF 109.82%)
         border: none
         border-radius: 50px
@@ -85,7 +94,9 @@
         font-size: 20px
         font-weight: 600
         width: 30%
-        margin: 10px auto    
+        margin: 10px auto 
+        display: flex
+        justify-content: center   
         &:hover
             background: linear-gradient(268.57deg, #BD00FF 27.31%, #FF00A8 109.82%)
             cursor: pointer
@@ -94,9 +105,117 @@
     position: relative
 .header_separator
     margin: -10px
-    >img
+    &__image
         z-index: 2
         width: 100%
         padding: 0
-    
-        
+.header_burger
+    &__items
+        position: fixed
+        top: 0
+        left: 0
+        width: 200px
+        height: 100%
+        padding: 15px
+        transform: translateX(-100%)
+        transition: transform .5s
+        background: #02091F
+        nav
+            position: sticky
+    &__icon
+        width: 30px
+        height: 30px
+        position: relative
+        z-index: 2
+        top: 20%
+        left: 100%
+        span
+            width: 25px
+            height: 2px
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-90%, -50%)
+            background: pink
+            transition: all .5s
+            &:nth-of-type(2)
+                width: 30px
+                top: calc( 50% - 10px )
+            &:nth-of-type(3)
+                width: 20px
+                top: calc( 50% + 10px )
+    li
+        list-style-type: none
+        margin: 20px 0
+        display: flex
+        color: white
+        justify-content: space-between
+        a
+            text-decoration: none
+            color: white
+            font-family: Lato
+            font-size: 16px
+            font-weight: 500
+.active_burger_bnt
+    >span
+        &:nth-of-type(1)
+            display: none
+        &:nth-of-type(2)
+            width: 30px
+            top: 50%
+            transform: translate(-50%, 0%) rotate(45deg)
+        &:nth-of-type(3)
+            width: 30px
+            top: 50%
+            transform: translate(-50%, 0%) rotate(-45deg)
+.active_burger
+    width: 200px
+    transform: translateX(0)
+    z-index: 100
+.header_separator
+    width: 100%
+    background-image: linear-gradient(180deg, #ECE2E2 0%, rgba(236, 226, 226, 0) 100%)
+    transform: rotate(180deg)
+@media (min-width: 2000px)
+    .header_logo
+        font-size: 40px
+    .header_wrapper
+        height: 70px
+        display: flex
+        align-items: center
+        >ul
+            >li
+                font-size: 30px
+    .header_content
+        z-index: 4
+        transform: scale(1.5)
+@media (min-width:1000px)
+    .header_burger
+        display: none
+        &__icon
+            left: 600%
+@media (max-width:768px)
+    .header_navigation_main_wrapper
+        backdrop-filter: none
+    .header_wrapper
+        display: none      
+    .header_content
+        max-width: 100%
+        // margin: 0 auto
+        &__text:nth-child(1)
+            font-size: 16px
+        &__text:nth-child(3)
+            font-size: 10px
+            width: 100%
+        h2
+            font-size: 40px
+        &__button
+            font-size: 10px
+            width: 70px
+    .header_content_wrapper
+        background-size: 80px
+        background-position: 90% 90%
+@media (min-width: 768px) and (max-width: 1024px)
+    .header_burger
+        &__icon
+            left: 600%

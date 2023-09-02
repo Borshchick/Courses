@@ -11,6 +11,7 @@
     background-position-x: right
     background-position-y: 120px
 .second_screen_title
+    margin-right: 10%
     padding-left: 30px
     width: max-content
     margin-left: auto
@@ -25,50 +26,78 @@
     background-image: url('../../../img/Star.png')
     background-repeat: no-repeat
     background-position-y: 30px
-.second_screen_items_wrapper
+.second_screen_text
+    font-size: 16px
+    font-weight: 400
+    font-family: Poppins
+.second_screen_items
     display: flex
     justify-content: center
     display: flex
     flex-direction: column
     width: 90%
     margin: 0 auto
-    >div:nth-child(1)
+    &__first_items
         justify-content: center
         display: flex
-        flex-direction: row
         flex-wrap: wrap
         width: 100%
         gap: 30px
-        >div
+        div
             width: 300px
-            >p
-                font-size: 16px
-                font-weight: 400
-                font-family: Poppins
-            >div
+            div
                 display: flex
                 flex-direction: row
                 gap: 20px
                 margin-bottom: 40px
-                >h3
+                h3
                     text-transform: uppercase
                     color: #FF00A8
-    >div:nth-child(2)
+    &__second_items
         justify-content: center
         display: flex
-        flex-direction: row
         flex-wrap: wrap
         width: 100%
         gap: 50px
         padding-top: 150px
-        >div
+        background-image: url('../../img/heart-star.png')
+        background-repeat: no-repeat
+        background-position: left 30%
+        &__wrapper
             width: 500px
-            >h3
+            h3
                 text-transform: uppercase
                 font-size: 24px
                 font-weight: 700
                 font-family: Cinzel
-            >p
+            p
                 font-size: 16px
                 font-family: Poppins
                 font-weight: 400
+
+@media (max-width:768px)
+    .second_screen_title
+        max-width: max-content
+        width: 100%
+        font-size: 20px
+@media (max-width: 775px)
+    .second_screen_items
+        &__second_items
+            background: none
+@media (min-width: 2000px)
+    .second_screen_main_wrapper
+        background-size: 45%
+    .second_screen_title
+        padding-top: 20px
+        padding-left: 60px
+        font-size: 60px
+        background-size: 80px
+        background-position: -5px 0
+    .second_screen_items
+        &__first_items
+            width: 50%
+            margin: auto
+        &__second_items
+            width: 50%
+            margin: auto
+            background-position: left center

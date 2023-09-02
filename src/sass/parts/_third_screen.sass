@@ -2,21 +2,21 @@
     padding-top: 200px
     background-image: url('../../../img/girls.png')
     background-repeat: no-repeat
-    background-position-x: right
+    background-position: right top
     background-size: 55%
     // margin-bottom: 200px
 .third_screen_wrapper
     background-image: url('../../../img/space-bg-left.png')
-    background-size: cover
+    background-size: auto
     background-repeat: no-repeat
-    background-position: -200px
+    background-position: center top
     margin-bottom: 150px
 .third_screen_title_wrapper
     width: 80%
     margin: 0 auto
     position: relative
     top: 100px
-    >h2
+    &__item
         width: 350px
         color: #FAF8F0
         font-family: Cinzel Decorative
@@ -27,10 +27,10 @@
         background-image: url('../../../img/Star.png')
         background-repeat: no-repeat
         background-position-x: right
-    >div
+    &__list
         display: flex
         align-items: center
-        >ul
+        ul
             width: 100%
             display: flex
             align-items: center
@@ -41,18 +41,18 @@
             background-repeat: no-repeat
             background-position-y: 10px 
             background-position-x: 200px 
-            >li:nth-child(1)
+            li:nth-child(1)
                 color: #FF00A8
                 font-family: Cinzel Decorative
                 font-size: 36px
                 font-weight: 700
-            >li
+            li
                 color: #FAF8F0
                 list-style: none
                 font-family: Poppins
                 font-size: 32px
                 font-weight: 400
-            >li::first-letter
+            li::first-letter
                 text-transform: uppercase
 .third_screen_cards_title_wrapper
     height: max-content
@@ -60,7 +60,7 @@
     margin: auto
     padding: 15px 0
     padding-right: 20px
-    >h2
+    h2
         margin-top: 18%
         padding: 100px 50px 50px 0
         font-family: Cinzel Decorative
@@ -81,19 +81,19 @@
     gap: 40px
     justify-content: center
     align-items: center
-    >div
+    &__card
         width: 300px
         border: 1px solid #FF00A8
         background: #02091F
         padding: 55px 25px
         border-radius: 10px
         height: 300px
-        >h3
+        h3
             color: #FFAAE2
             font-family: Cinzel Decorative
             font-weight: 700
             font-size: 20px
-        >p
+        p
             font-family: Poppins
             font-weight: 300
             font-size: 16px
@@ -105,7 +105,7 @@
     background-image: url(../../../img/quotes.png)
     background-repeat: no-repeat
     background-position: 60px
-    >p
+    p
         width: 800px
         font-family: Poppins
         font-style: italic
@@ -116,14 +116,90 @@
     >img
         width: 100%
 @media (min-width: 768px) and (max-width: 1023px)
+    .third_screen_wrapper
+        margin-top: -200px
+    .third_screen_cards_title_wrapper
+        h2
+            background-position: right 60px !important
+            background-size: 30%  !important
+    .third_screen_title_wrapper
+        width: max-content
+        padding-right: 40px
     .third_screen_quote_wrapper
         width: 400px
         background-position: 94px
         background-size: 70%
         >p
-            width: 100%
-        
+            width: 100%     
     .third_screen_title_wrapper
-        >div
-            >ul
+        div
+            ul
                 gap: 50px
+                background-position: center 22px
+                background-size: contain
+@media (min-width: 2000px)
+    .third_screen_main_wrapper
+        background-position: right -4%
+        background-size: 45%
+    .third_screen_wrapper
+        background-position: center 0
+        background-size: 100% 100%
+        margin-top: 100px
+    .third_screen_cards_wrapper
+        width: 50%
+    .third_screen_cards_title_wrapper
+        h2
+            margin: inherit
+@media (max-width: 768px)
+    .third_screen_main_wrapper
+        background-position-y: 0%
+    .third_screen_wrapper
+        background-size: auto
+        background-position: right top
+        // margin-top: -305px
+    .third_screen_cards_wrapper
+        &__card
+            height: fit-content
+            img
+                width: 10%
+            h3
+                font-size: 15px
+            p
+                font-size: 10px
+    .third_screen_cards_title_wrapper
+        h2
+            font-size: 25px
+            background-position: bottom right
+            background-size: 50%
+    .third_screen_title_wrapper
+        width: max-content
+        padding-right: 40px
+        &__item
+            width: auto
+            padding-top: 170px
+            padding-bottom: 0
+            background-position: right 138px
+        h2
+            font-size: 30px
+        &__list
+            ul
+                background-size: contain
+                background-position: center
+                gap: 30px
+                li
+                    font-size: 10px
+                li:nth-child(1)
+                    font-size: 15px 
+    .third_screen_quote_wrapper
+        width: auto
+        padding: 40px 40px
+        background-size: 100%
+        background-position: center
+        p
+            width: auto
+            font-size: 10px
+@media (max-width:425px)
+    .third_screen_main_wrapper
+        background-position: top right
+    .third_screen_wrapper
+        margin-top: -305px

@@ -13,30 +13,60 @@
     href="https://fonts.googleapis.com/css2?family=Audiowide&family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;500;600;700;800;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&display=swap"
     rel="stylesheet"
   />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
-    <header class="header">
+    <header id="header" class="header">
   <div class="header_main_wrapper">
     <div class="header_navigation_main_wrapper">
       <div class="header_logo">YourFans</div>
       <div class="header_navigation_wrapper">
+        <div class="header_burger">
+          <div class="header_burger__icon">
+            <span class="header_burger__span"></span>
+            <span class="header_burger__span"></span>
+            <span class="header_burger__span"></span>
+          </div>
+          <div class="header_burger__items">
+            <nav class="header_burger_items__navigation">
+              <ul>
+                <li>
+                  <a href="#header">Home</a>
+                  <div class="header_burger__arrow">&#215;</div>
+                </li>
+                <li>
+                  <a href="#serv">Services</a>
+                </li>
+                <li>
+                  <a href="#about"> About Us</a>
+                </li>
+                <li>
+                  <a href="">Apply Now</a>
+                </li>
+                <li>
+                  <a href="#FAQ">FAQ</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
         <nav class="header_wrapper">
           <ul>
             <li>
               <a href="">Home</a>
             </li>
             <li>
-              <a href="">Services</a>
+              <a href="#serv">Services</a>
             </li>
             <li>
-              <a href=""> About Us</a>
+              <a href="#about"> About Us</a>
             </li>
             <li>
               <a href="">Apply Now</a>
             </li>
             <li>
-              <a href="">FAQ</a>
+              <a href="#FAQ">FAQ</a>
             </li>
           </ul>
         </nav>
@@ -44,33 +74,31 @@
     </div>
     <div class="header_content_wrapper">
       <div class="header_content">
-        <div>Need help growing your</div>
-        <h2>Onlyfans?</h2>
-        <div>
+        <p class="header_content__text">Need help growing your</p>
+        <h2 class="header_content__text">Onlyfans?</h2>
+        <p class="header_content__text">
           YourFans is the world’s best OnlyFans management and marketing agency
-        </div>
-        <button class="header_apply_button">Apply now</button>
+        </p>
+        <a class="header_content__button">Apply now</a>
       </div>
     </div>
-    <div class="header_separator">
-      <img src="../../img/separator.png" />
-    </div>
+    <!-- <div class="header_separator">
+    </div> -->
   </div>
-  
 </header>
 
     <main>
         
 <div class="second_screen_main_wrapper">
   <h2 class="second_screen_title">what makes your fans so special?</h2>
-  <div class="second_screen_items_wrapper">
-    <div>
+  <div class="second_screen_items">
+    <div data-aos="fade-up" class="second_screen_items__first_items" >
       <div>
         <div>
           <img src="./../../img/dynamic.png" />
           <h3>Onlyfans consultancy</h3>
         </div>
-        <p>
+        <p class="second_screen_text">
           YourFans Onlyfans Agency provides the services of Onlyfans consultants
           who will furnish you with overviewreports, on a weekly basis, that
           include a comprehensive overview of your page.+ More.
@@ -82,7 +110,7 @@
           <h3>Creative team</h3>
         </div>
 
-        <p>
+        <p class="second_screen_text">
           YourFans Onlyfans Agency offers a creative team that will provide you
           with weekly updates on social media trends as well as trending
           hashtags so that you always stay ahead of the trend.
@@ -94,7 +122,7 @@
           <h3>chatters</h3>
         </div>
 
-        <p>
+        <p class="second_screen_text">
           YourFans OnlyFans Agency has a team of skilled chatters, with their
           expertise they guarantee to generate income while providing
           professional and personalized communication with your fans.
@@ -106,7 +134,7 @@
           <h3>agents</h3>
         </div>
 
-        <p>
+        <p class="second_screen_text">
           Upon signing up with YourFans Agency, you will be paired with a
           personal agentwho will act as your guide to achieving success and will
           also oversee any day-to-day social media tasks.
@@ -118,7 +146,7 @@
           <h3>social media analysts</h3>
         </div>
 
-        <p>
+        <p class="second_screen_text">
           YourFans Analysts anazlyze yourOnlyFans and your social media content
           presentation to identify the reasons your pages aren't seeing the kind
           of profits that you are looking for.
@@ -130,15 +158,15 @@
           <h3>photoshoots</h3>
         </div>
 
-        <p>
+        <p class="second_screen_text">
           YourFans offers weekly and monthly photoshoots/media creation, which
           we arrange and organize. At present, these services are exclusively
           available to clients .
         </p>
       </div>
     </div>
-    <div>
-      <div>
+    <div data-aos="fade-up" class="second_screen_items__second_items">
+      <div class="second_screen_items__second_items__wrapper">
         <h3>remotework</h3>
         <p>
           Working with YourFans ensures that you can work and live comfortably.
@@ -146,7 +174,7 @@
           to create content that our team can post throughout the day.​
         </p>
       </div>
-      <div>
+      <div class="second_screen_items__second_items__wrapper">
         <h3>events</h3>
         <p>
           Aside from doing OnlyFans Management, YourFans is also a known event
@@ -154,7 +182,7 @@
           EDM DJ and host a club night in the Miami / Fort Lauderdale area.
         </p>
       </div>
-      <div>
+      <div class="second_screen_items__second_items__wrapper">
         <h3>consistent growth</h3>
         <p>
           Upon signing up with YourFans Agency, you will see consistent fan
@@ -163,7 +191,7 @@
           0.1% of earners on OnlyFans.
         </p>
       </div>
-      <div>
+      <div class="second_screen_items__second_items__wrapper">
         <h3>branding</h3>
         <p>
           At YourFans OnlyFans Agency. We believe in building a solid social
@@ -179,8 +207,8 @@
         <div class="third_screen_main_wrapper">
   <div class="third_screen_wrapper">
     <div class="third_screen_title_wrapper">
-      <h2 class="third_screen_title">Our Promise</h2>
-      <div>
+      <h2 class="third_screen_title_wrapper__item">Our Promise</h2>
+      <div data-aos="fade-right" class="third_screen_title_wrapper__list" >
         <ul>
           <li>more</li>
           <li>money</li>
@@ -189,12 +217,12 @@
         </ul>
       </div>
     </div>
-    <div class="third_screen_cards_main_wrapper">
-      <div class="third_screen_cards_title_wrapper">
+    <div id="serv" class="third_screen_cards_main_wrapper">
+      <div data-aos="fade-left" class="third_screen_cards_title_wrapper">
         <h2>Our Services</h2>
       </div>
-      <div class="third_screen_cards_wrapper">
-        <div>
+      <div data-aos="fade-up" class="third_screen_cards_wrapper">
+        <div class="third_screen_cards_wrapper__card">
           <img src="../../img/arrow-up.png" />
           <h3>Personalised Marketing Strategies</h3>
           <p>
@@ -204,7 +232,7 @@
             amplify your presence and attract loyal subscribers.
           </p>
         </div>
-        <div>
+        <div class="third_screen_cards_wrapper__card">
           <img src="../../img/brush.png" />
           <h3>Brand Development and Consulting</h3>
           <p>
@@ -214,7 +242,7 @@
             profile stands out in competitive market.
           </p>
         </div>
-        <div>
+        <div class="third_screen_cards_wrapper__card">
           <img src="../../img/wallet.png" />
           <h3>Subscriber Growth Strategies</h3>
           <p>
@@ -224,7 +252,7 @@
             conversion tactics to attract and retain loyal fans.
           </p>
         </div>
-        <div>
+        <div class="third_screen_cards_wrapper__card">
           <img src="../../img/scheme.png" />
           <h3>Performance Analytics and Insights</h3>
           <p>
@@ -235,7 +263,7 @@
             strategies.
           </p>
         </div>
-        <div>
+        <div class="third_screen_cards_wrapper__card">
           <img src="../../img/coins.png" />
           <h3>Monetization and Pricing Strategies</h3>
           <p>
@@ -246,7 +274,7 @@
             content options.
           </p>
         </div>
-        <div>
+        <div class="third_screen_cards_wrapper__card">
           <img src="../../img/camera.png" />
           <h3>Content Creation and Optimisation</h3>
           <p>
@@ -260,7 +288,7 @@
       </div>
     </div>
   </div>
-  <div class="third_screen_quote_wrapper">
+  <div data-aos="fade-up" class="third_screen_quote_wrapper">
     <p>
       Being wealthy is not about having a lot of money, it's about having the
       freedom to do what you love with the people you love, without worrying
@@ -275,35 +303,35 @@
 
         <div class="fourth_screen_main_wrapper">
   <div class="fourth_screen_info_wrapper">
-    <div>
+    <div data-aos="fade-right" class="fourth_screen_info_wrapper__data">
       <h2>10+</h2>
       <p>ACTIVE yourfans AGENCY EMPLOYEES</p>
     </div>
-    <div>
+    <div data-aos="fade-down" class="fourth_screen_info_wrapper__data">
       <h2>$65.4K</h2>
       <p>ESTIMATED PLUSH MODEL TURNOVER</p>
     </div>
-    <div>
+    <div data-aos="fade-left" class="fourth_screen_info_wrapper__data">
       <h2>1.2M</h2>
       <p>FOLLOWERS GENERATED BY PLUSH AGENCY</p>
     </div>
   </div>
-  <div class="fourth_screen_title_wrapper">
+  <div data-aos="fade-up" class="fourth_screen_title_wrapper">
     <h2>AND THIS IS ONLY JUST THE BEGINNING</h2>
-    <button>Apply now</button>
+    <a class="fourth_screen_title_wrapper__apply_button">Apply now</a>
   </div>
-  <div class="fourth_screen_logo_wrapper">
+  <div data-aos="fade-up" class="fourth_screen_logo_wrapper">
     <h2>ONLYFANS IS NOT EASY...</h2>
     <p>
       OnlyFans is a competitive platform that has many difficulties, but with
       the right management those problems simply don't exist...
     </p>
   </div>
-  <div class="fourth_screen_card_wrapper">
+  <div data-aos="fade-up" class="fourth_screen_card_wrapper">
     <div class="forth_screen_main_card_wrapper">
-      <div>
+      <div class="forth_screen_main_card_wrapper__card">
         <h3>ACCOUNT AUDITING</h3>
-        <div>
+        <div class="forth_screen_main_card_wrapper__card__list">
           <ul>
             <li>Regular Account Performance</li>
             <li>
@@ -315,9 +343,9 @@
           </ul>
         </div>
       </div>
-      <div>
+      <div class="forth_screen_main_card_wrapper__card">
         <h3>ACCOUNT MANAGEMENT</h3>
-        <div>
+        <div class="forth_screen_main_card_wrapper__card__list">
           <ul>
             <li>Devoted Account Manager</li>
             <li>Profile Optimisation</li>
@@ -331,9 +359,9 @@
           </ul>
         </div>
       </div>
-      <div>
+      <div class="forth_screen_main_card_wrapper__card">
         <h3>ACCOUNT GROWTH</h3>
-        <div>
+        <div class="forth_screen_main_card_wrapper__card__list">
           <ul>
             <li>Bespoke Multi-Platform Marketing Strategy</li>
             <li>
@@ -351,101 +379,215 @@
   </div>
 </div>
 
-        <div class="fifth_screen_main_wrapper">
-  <div class="fifth_screen_about">
-    <h2>About us</h2>
-    <div>
-      <p>
-        We empower our clients to reach their full potential by taking over the
-        burden of marketing, management, and branding. By entrusting these tasks
-        to our team of experts, creators are free to focus on what they do best
-        - creating content and living your life.
-        <br />
-        Our approach to OnlyFans sets us apart from the other Agencies and has
-        proven successful countless of times. Take your content to the next
-        level and become a top 0.5% creator with YourFans.
-      </p>
+        <div>
+  <div data-aos="fade-up" id="about" class="first-article">
+    <h2 class="first-article__tittle">About us</h2>
+    <div class="first-article__wrapper">
+      <div  class="first-article__text">
+        <p>
+          We empower our clients to reach their full potential by taking over
+          the burden of marketing, management, and branding. By entrusting these
+          tasks to our team of experts, creators are free to focus on what they
+          do best - creating content and living your life.
+        </p>
+        <p>
+          We empower our clients to reach their full potential by taking over
+          the burden of marketing, management, and branding. By entrusting these
+          tasks to our team of experts, creators are free to focus on what they
+          do best - creating content and living your life. Our approach to
+          OnlyFans sets us apart from the other Agencies and has proven
+          successful countless of times. Take your content to the next level and
+          become a top 0.5% creator with YourFans.
+        </p>
+      </div>
       <img src="../../img/girl_1.png" />
     </div>
-    <div>
+    <div data-aos="fade-up" class="second-article">
       <img src="../../img/girl_2.png" />
-      <div>
-        <h2>Why us</h2>
-        <p>
-          At YourFans Agency, we believe that personal connection is the key to
-          a successful partnership and we prioritize building strong, reliable
-          connections with our clients based on trust, respect and reliability
-        </p>
-        <p>
-          We invent time to get to know our clients and their personal goals. We
-          prioritize privacy by keeping all details confidential unless approved
-          by our partners . We are open and honest in discussing potential
-          opportunities and we work together to define concrete goals and the
-          next step to grow your fan base and establish a new level of
-          connection with your fans.
-        </p>
-        <p>
-          Our actions are driven by passion and enthusiasm, but we strive to
-          base them on unbiased data rather than personal opinions. If you share
-          our values, we invite you to apply and explore the possibility of
-          working with us.
-        </p>
+      <div  class="second-article__wrapper">
+        <h2 class="second-article__tittle">Why us</h2>
+        <div class="second-article__text">
+          <p>
+            At YourFans Agency, we believe that personal connection is the key
+            to a successful partnership and we prioritize building strong,
+            reliable connections with our clients based on trust, respect and
+            reliability
+          </p>
+          <p>
+            We invent time to get to know our clients and their personal goals.
+            We prioritize privacy by keeping all details confidential unless
+            approved by our partners . We are open and honest in discussing
+            potential opportunities and we work together to define concrete
+            goals and the next step to grow your fan base and establish a new
+            level of connection with your fans.
+          </p>
+          <p>
+            Our actions are driven by passion and enthusiasm, but we strive to
+            base them on unbiased data rather than personal opinions. If you
+            share our values, we invite you to apply and explore the possibility
+            of working with us.
+          </p>
+        </div>
       </div>
     </div>
   </div>
-  <div class="fifth_screen_main_description_wrapper">
-    <div>
-      <h2>What we do</h2>
-      <p>
-        YourFans Agency is an online marketing agency that works with models to
-        provide a hustle-free environment allowing the content creators to focus
-        only on generating content.
-      </p>
-      <p>
-        As experienced OnlyFans Account Management Specialist, we use a
-        multi-layered approach to ensure we maximize the outcome for our content
-        creators. This enables us to continue providing the highest quality
-        services to our clients in areas such as:
-      </p>
-      <div>
-        <ul>
-          <li>Social Media Strategy</li>
-          <li>Customer Acquisition</li>
-          <li>Revenue Growth</li>
-          <li>Content Management</li>
-          <li>Mental Health Support</li>
-          <li>Company Event</li>
-          <li>Creator Networking</li>
-          <li>Subscribers Management</li>
-        </ul>
+  <div data-aos="fade-up" data-aos-duration="500" class="fifth-screen-articles">
+    <div class="fifth-screen-articles__first-article">
+      <h2 class="fifth-screen-articles__title">What we do</h2>
+      <div class="fifth-screen-articles__text">
+        <p>
+          YourFans Agency is an online marketing agency that works with models
+          to provide a hustle-free environment allowing the content creators to
+          focus only on generating content.
+        </p>
+        <p>
+          As experienced OnlyFans Account Management Specialist, we use a
+          multi-layered approach to ensure we maximize the outcome for our
+          content creators. This enables us to continue providing the highest
+          quality services to our clients in areas such as:
+        </p>
       </div>
+      <ul class="fifth-screen-articles__list">
+        <li>Social Media Strategy</li>
+        <li>Customer Acquisition</li>
+        <li>Revenue Growth</li>
+        <li>Content Management</li>
+        <li>Mental Health Support</li>
+        <li>Company Event</li>
+        <li>Creator Networking</li>
+        <li>Subscribers Management</li>
+      </ul>
     </div>
-    <div class="fifth_screen_second_description_wrapper">
-        <div>
-          <h2>LACK OF STRATEGY</h2>
-          <div>
-            <p>
-              One of the biggest challenges for OnlyFans models is creating and
-              executing a content strategy that will keep their fans engaged and
-              subscribed.
-            </p>
-            <p>
-              Without a clear plan or direction, models can easily become
-              overwhelmed and burnt out, leading them to potentially quit the
-              platform altogether. At PLUSH we will set up your personalized content
-              strategy for social media as well as your OnlyFans.
-            </p>
-            <button>Apply now</button>
-          </div>
+    <div class="fifth-screen-articles__second-article">
+      <div class="fifth-screen-articles__wrapper">
+        <h2 class="fifth-screen-articles__second-title">LACK OF STRATEGY</h2>
+        <div data-aos="fade-right" class="fifth-screen-articles__second-text">
+          <p>
+            One of the biggest challenges for OnlyFans models is creating and
+            executing a content strategy that will keep their fans engaged and
+            subscribed.
+          </p>
+          <p>
+            Without a clear plan or direction, models can easily become
+            overwhelmed and burnt out, leading them to potentially quit the
+            platform altogether. At PLUSH we will set up your personalized
+            content strategy for social media as well as your OnlyFans.
+          </p>
         </div>
-        <div>
-          <img src="../../img/girl_3.png" />
-        </div>
+        <a class="fifth-screen-articles__apply-button">Apply now</a>
       </div>
+      <img data-aos="fade-left" class="fifth-screen-articles__image" src="../../img/girl_3.png"/>
+    </div>
+  </div>
+</div>
+
+        <div class="sixth-screen">
+  <div data-aos="fade-up" class="sixth-screen__tittles">
+    <h2>O UPFRONT FEES</h2>
+    <h3>WE WILL MAKE YOU POPULAR WHILE... BRINGING IN MONEY</h3>
+  </div>
+  <div class="sixth-screen__content-wrapper">
+    <img data-aos="fade-right" src="../../img/ smartphone.png" />
+    <div data-aos="fade-left" class="sixth-screen__content">
+      <h3>How to get rich off of onlyfans quick</h3>
+      <a class="sixth-screen__apply-button">Apply now</a>
+    </div>
+  </div>
+  <div data-aos="fade-up" id="FAQ" class="sixth-screen__accordion-wrapper">
+    <h2 class="sixth-screen__accordion-tittle">Frequently asked questions</h2>
+    <div class="sixth-screen__accordion-item">
+        <div class="sixth-screen__accordion-button">
+            <p>What does our agency do?</p>
+          </div>
+          <div class="sixth-screen__accordion-content">
+            <p>
+              Agency is the sense of control that you feel in your life, your capacity
+              to influence your own thoughts and behavior, and having faith in your
+              ability to handle a wide range of tasks and situations. Your sense of
+              agency helps you to be psychologically stable, yet flexible in the face
+              of conflict or change.
+            </p>
+            <p>
+              Moreover: content scheduling, chatting with subscribers, selling PPVs,
+              and assisting creators with their OnlyFans account handling.
+            </p>
+          </div>
+    </div>
+    <div class="sixth-screen__accordion-item">
+        <div class="sixth-screen__accordion-button">
+            How long does it take to see results on OnlyFans?
+          </div>
+          <div class="sixth-screen__accordion-content">
+            <p>
+              Like all great things, marketing results take time. You wouldn’t expect
+              to be an expert chef after 1 week in culinary school, just as you can’t
+              expect an abundance of digital marketing results in just a week’s time.
+              Anyone can manipulate links, automate content, or use other sketchy
+              marketing tactics to get temporary results. But this isn’t what you
+              want. You want real clicks, real conversions, real business authority
+              and real money. So, here’s what you need to know about generating real,
+              quality, and enduring results.
+            </p>
+            <p>Usually it takes at least 1-2 months</p>
+          </div>
+    </div>
+    <div class="sixth-screen__accordion-item">
+        <div class="sixth-screen__accordion-button">
+            How do I get started?
+          </div>
+          <div class="sixth-screen__accordion-content">
+            <p>
+              Since a lot of the content on OnlyFans is explicit, users have to be at
+              least 18 and will need a government-issued ID in order to sign up. If
+              you match this requirement click on Apply to YourFans
+            </p>
+          </div>
+    </div>
+    
   </div>
 </div>
 
     </main>
-    
+    <footer>
+  <div class="footer">
+    <div class="footer__wrapper">
+      <div class="footer__logo">YourFans</div>
+      <div class="footer__navigation">
+        <ul>
+          <li>
+            <a href="#header">Home</a>
+          </li>
+          <li>
+            <a href="#serv">Services</a>
+          </li>
+          <li>
+            <a href="#about"> About Us</a>
+          </li>
+          <li>
+            <a>Apply Now</a>
+          </li>
+          <li>
+            <a href="#FAQ">FAQ</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__apply-button">
+        <a>Apply now</a>
+      </div>
+    </div>
+    <p class="footer__link">
+      © 2022 YourFans AGENCY. All rights reserved | OnlyFans Management Agency
+    </p>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="../../js/link.js"></script>
+  <script src="../../js/burger.js"></script>
+  <script src="../../js/accordion.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</footer>
+
 </body>
 </html>

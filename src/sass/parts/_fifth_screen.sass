@@ -1,136 +1,265 @@
-.fifth_screen_about
+.first-article
+    &__tittle
+        width: max-content
+        margin-top:50px
+        margin-left: 150px
+        font-size: 36px
+        font-family: Cinzel Decorative
+        font-weight: 700
+        background-image: url('../../../img/Star.png')
+        background-size: 20%
+        background-position: right top
+        background-repeat: no-repeat
+        padding-top: 30px
+        padding-right: 30px 
+    &__wrapper
+        margin-top: 100px
+        background: #FFAAE2
+        display: flex
+        height: 300px
+        align-items: center
+        justify-content: center
+        padding: 30px 0
+        img
+            width: 400px
+    &__text
+        display: flex
+        flex-direction: column
+        gap: 20px
+        width: 770px
+        max-width: 60%
+        gap: 20px
+        font-family: Poppins
+        font-size: 18px
+        font-weight: 400
+.second-article
     display: flex
-    flex-direction: column
-    margin-bottom: 100px
-    >h2:nth-child(1)
+    align-items: center
+    justify-content: center
+    margin-top: 60px
+    img
+        height: 450px
+    &__tittle
+        margin-bottom: 40px
+        font-family: Cinzel Decorative
         font-size: 36px
         font-weight: 700
-        font-family: Cinzel Decorative
-        display: flex
-        justify-content: flex-start
-        width: 90%
-        margin: 0 auto
-        background-image: url("../../../img/Star.png")
+        background-image: url('../../../img/border_star.png')
         background-repeat: no-repeat
-        background-position: 205px -3px
-        height: 100px
-        align-items: center
-    >div:nth-child(2)
-        margin-top: 100px
-        display: flex
-        justify-content: center
-        align-items: center
-        background: #FFAAE2
-        height: 400px
-        >img
-            width: 500px
-        >p
-            font-family: Poppins
-            font-weight: 400
-            font-size: 18px
-            width: 700px
-    >div
-        margin-top: 100px
-        display: flex
-        justify-content: center
-        align-items: center
-        height: 400px
-        >img
-            width: 500px
-        >div
-            display: flex
-            flex-direction: column
-            gap: 20px
-            >p
-                font-family: Poppins
-                font-weight: 400
-                font-size: 18px
-                width: 700px
-            >h2
-                font-size: 36px
-                font-weight: 700
-                font-family: Cinzel Decorative
-                display: flex
-                justify-content: flex-start
-                width: 90%
-                margin: 0 auto
-                padding-top: 50px
-                padding-bottom: 50px
-                background-image: url('../../../img/border_star.png')
-                background-repeat: no-repeat
-                background-position: 0 9px
-.fifth_screen_main_description_wrapper
+        background-position: center 10px
+        background-size: contain
+        width: max-content
+        padding: 40px 40px 0 0
+
+    &__text
+        max-width: 90%
+        width: 580px
+        font-family: Poppins
+        font-size: 16px
+        font-weight: 400
+        p
+            margin-bottom: 20px
+.fifth-screen-articles
     background-image: url('../../../img/space-bg.png')
     background-size: cover
     background-repeat: no-repeat
-    display: flex
-    flex-direction: column
-    >div
-        margin-top: 120px
+    &__first-article
+        padding-top: 150px
+        margin: auto
+        margin-top: 40px
+    &__title
+        color: white
+        font-family: Cinzel Decorative
+        font-size: 36px
+        font-weight: 700
+        width: max-content
+        margin: auto
+        padding: 30px 25px
+        background-image: url('../../../img/wave_star.png')
+        background-size: 60%
+        background-position: right -5px
+        background-repeat: no-repeat
+    &__text
+        width: 900px
+        text-align: center
+        font-family: Poppins
+        font-size: 18px
+        font-weight: 400
+        color: white
+        margin: auto
+        p
+            margin-bottom: 20px
+    &__list
         display: flex
-        align-items: center
-        justify-content: center
-        flex-direction: column
-        color: #FAF8F0
+        width: 900px
+        margin: auto
         gap: 20px
-        >h2
-            font-family: Cinzel Decorative
-            font-size: 36px
-            font-weight: 700
-            background-image: url('../../../img/wave_star.png')
-            background-repeat: no-repeat
-            background-position: right -5px
-            padding: 30px
-        >p
-            font-family: Poppins
-            font-weight: 400
-            font-size: 18px
-            width: 1000px
-        >div
-            font-family: Poppins
-            font-size: 20px
-            font-weight: 600
-            >ul
-                display: flex
-                width: 1000px
-                margin: 0 auto
-                flex-wrap: wrap
-                gap: 40px
-                background-image: url('../../../img/fallen_star.png')
-                background-repeat: no-repeat
-                background-position: center
-                padding: 40px
-                >li
-                    list-style: none
-.fifth_screen_second_description_wrapper
-    display: inline-flex
-    flex-direction: row
-    >div
+        list-style: none
+        color: white
+        flex-wrap: wrap
+        font-family: Poppins
+        font-size: 20px
+        font-weight: 600
+        padding: 40px
+        background-image: url('../../../img/fallen_star.png')
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: center
+    &__second-article
+        max-width: 1150px
+        width: 80%
+        margin: auto
+        margin-top: 100px
+        display: flex
+        color: white
+        gap: 90px
+    &__wrapper
+        margin: auto
+    &__second-title
+        font-family: Cinzel Decorative
+        font-weight: 700
+        font-size: 36px
+        margin-bottom: 40px
+        width: max-content
+        padding: 40px 40px 0 0
+        background-image: url('../../../img/Star.png')
+        background-size: 12%
+        background-position: right 5px
+        background-repeat: no-repeat
+    &__second-text
+        font-family: Poppins
+        font-weight: 400
+        font-size: 18px
         display: flex
         flex-direction: column
-        >h2
-            font-family: Cinzel Decorative
-            font-size: 36px
-            font-weight: 700
-            margin-bottom: 50px
-        >div
-            display: flex
-            flex-direction: column
-            gap: 20px
-            >p
-                width: 700px
-            >button
-                background: linear-gradient(268.57deg, #FF00A8 27.31%, #BD00FF 109.82%)
-                border: none
-                border-radius: 50px
-                padding: 13px 40px
-                color: #FAF8F0
-                font-family: Poppins
-                font-size: 20px
-                font-weight: 600
+        gap: 20px
+    &__image
+        width: 350px
+    &__apply-button
+        margin-top: 20px
+        background: linear-gradient(268.57deg, #FF00A8 27.31%, #BD00FF 109.82%)
+        border: none
+        border-radius: 50px
+        padding: 13px 40px
+        color: #FAF8F0
+        font-family: Poppins
+        font-size: 20px
+        font-weight: 600
+        width: 20%
+        display: flex
+        justify-content: center 
+        &:hover
+            background: linear-gradient(268.57deg, #BD00FF 27.31%, #FF00A8 109.82%)
+            cursor: pointer
+            transition: background-image 0.5s linear
+@media (min-width: 601px) and (max-width: 1024px)
+    .first-article
+        &__tittle
+            font-size: 20px
+        &__text
+            font-size: 10px
+            width: 50%
+        &__wrapper
+            height: 150px
+            img
                 width: 300px
-                margin: 10px auto 
-                &:hover
-                    background: linear-gradient(268.57deg, #BD00FF 27.31%, #FF00A8 109.82%)
-                    cursor: pointer
-                    transition: background-image 0.5s linear
+    .second-article
+        &__wrapper
+            width: 50%
+        img
+            width: 40%
+            height: 40%
+        &__text
+            font-size: 10px 
+        &__tittle
+            font-size: 20px   
+    .fifth-screen-articles
+        &__title
+            font-size: 20px
+        &__text
+            font-size: 10px
+            width: 80%
+        &__list
+            font-size: 10px
+            width: 80%
+            justify-content: center
+            background-size: contain
+            background-position: top
+        &__second-article
+            margin-top: 0
+        &__second-title
+            font-size: 20px 
+        &__second-text
+            font-size: 10px
+        &__apply-button
+            font-size: 10px
+            width: 30%
+        &__image
+            width: 40% 
+            height: 40%          
+@media (max-width:600px)
+    .first-article
+        &__wrapper
+            display: contents
+        &__tittle
+            font-size: 25px
+            margin: auto
+            paddin-bottom: 20px
+        &__text
+            margin: auto
+            font-size: 15px
+        img
+            width: 100%
+        img:nth-child(1)
+            width: 100%
+            height: 100%
+    .second-article
+        display: contents
+        &__tittle
+            font-size: 25px
+            margin: auto
+            margin-bottom: 20px
+        &__text
+            font-size: 15px
+            width: 80%
+            margin: auto
+    .fifth-screen-articles
+        &__first-article
+            margin-top: -170px
+            // padding-top: 20px
+        &__title
+            font-size: 25px
+            margin-top: 120px
+        &__text
+            font-size: 15px
+            width: 80%
+            margin: auto
+        &__list
+            width: 50%
+            margin: auto
+            font-size: 15px
+            justify-content: center
+            li
+                text-align: center
+        &__second-article
+            flex-direction: column
+            flex-wrap: wrap
+            align-items: center
+            width: 100%
+            // display: contents
+        &__second-title
+            font-size: 25px
+            margin: auto
+            margin-bottom: 20px
+        &__second-text
+            font-size: 15px
+            width: 80%
+            margin: auto
+            margin-bottom: 30px
+        &__apply-button
+            width: 30%
+            font-size: 15px
+            margin: auto
+            margin-bottom: 30px 
+        &__image
+            width: 60%
