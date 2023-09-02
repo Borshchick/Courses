@@ -1,0 +1,163 @@
+.sixth-screen
+    margin-top: 60px
+    background-image: url('../../../img/second-spiral-haos.png')
+    background-repeat: no-repeat
+    background-size: 20%
+    background-position: right center
+    margin-bottom: 140px
+    &__tittles
+        width: 800px
+        margin: auto
+        text-align: center
+        h2
+            font-family: Cinzel Decorative
+            font-size: 48px
+            font-weight: 700
+            width: max-content
+            margin: auto
+            padding-left: 50px
+            padding-top: 30px
+            background-image: url('../../../img/heards.png')
+            background-repeat: no-repeat
+            background-size: 8%
+            background-position: left top
+        h3
+            margin-top: 30px
+            font-family: Cinzel
+            font-size: 36px
+            font-weight: 700
+            color: #FF00A8
+    &__content-wrapper
+        margin-top: 100px
+        display: flex
+        align-items: center
+        justify-content: center
+        gap: 40px
+    &__content
+        h3
+            font-family: Cinzel
+            font-weight: 700
+            font-size: 40px
+            width: 450px
+            margin-bottom: 60px
+            background-image: url('../../../img/bottom-line.png')
+            background-repeat: no-repeat
+            background-size: 40%
+            background-position: 211px bottom
+    &__apply-button
+        background: linear-gradient(268.57deg, #FF00A8 27.31%, #BD00FF 109.82%)
+        border: none
+        border-radius: 50px
+        padding: 13px 40px
+        color: #FAF8F0
+        font-family: Poppins
+        font-size: 20px
+        font-weight: 600
+        width: 30%
+        margin: 10px auto 
+        margin-left: inherit
+        display: flex
+        justify-content: center   
+        &:hover
+            background: linear-gradient(268.57deg, #BD00FF 27.31%, #FF00A8 109.82%)
+            cursor: pointer
+            transition: background-image 0.5s linear
+    &__accordion-wrapper
+        width: 900px
+        margin: auto
+    &__accordion-item:nth-child(2)
+        border-top: 1px solid #FF00A8
+    &__accordion-tittle
+        width: max-content
+        font-family: Cinzel Decorative
+        font-weight: 700
+        font-size: 36px
+        padding: 30px 30px 0 0
+        margin-bottom: 50px
+        margin-top: 100px
+        background-image: url('../../../img/Star.png')
+        background-repeat: no-repeat
+        background-size: 5%
+        background-position: right top
+    &__accordion-item
+        border-bottom: 1px solid #FF00A8
+    &__accordion-button
+        width: 100%
+        font-family: Poppins
+        font-weight: 700
+        font-size: 20px
+        padding: 30px 0
+        display: flex
+    &__accordion-content
+        font-family: Poppins
+        font-weight: 400
+        font-size: 18px
+        max-height: 0
+        overflow: hidden
+        transition: .3s ease-in-out
+        p
+            margin-bottom: 20px
+    
+@media (min-width: 768px) and (max-width: 1024px)
+    .sixth-screen
+        &__tittles
+            width: 70%
+            h2
+                font-size: 30px
+            h3
+                font-size: 25px
+        &__content-wrapper
+            img
+                width: 50%
+        &__content
+            h3
+                font-size: 25px
+                width: 70%
+                background-size: 50%
+                background-position: bottom left
+        &__apply-button
+            font-size: 15px
+            width: 30%
+        &__accordion-wrapper
+            width: 50%
+        &__accordion-tittle
+            font-size: 25px
+        &__accordion-content
+            p
+                font-size: 15px
+@media (max-width:700px)
+    .sixth-screen
+        &__tittles
+            width: 70%
+            h2
+                font-size: 20px
+                padding-top: 15px
+                padding-left: 25px
+            h3
+                font-size: 15px
+        &__content-wrapper
+            img
+                width: 50%
+        &__content
+            h3
+                font-size: 25px
+                width: 70%
+                background-size: 50%
+                background-position: bottom left
+        &__apply-button
+            text-align: center
+            font-size: 10px
+            width: 50%
+            padding: 10px 20px
+        &__accordion-wrapper
+            width: 50%
+        &__accordion-tittle
+            font-size: 20px
+            width: 80%
+            text-align: center
+            background-position: top right
+            background-size: 10%
+            padding: 5px 5px 0 0 
+        &__accordion-content
+            p
+                font-size: 15px
