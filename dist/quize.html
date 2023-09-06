@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Audiowide&family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;500;600;700;800;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="wrapper">
+        <div class="quiz">
+          <div class="quiz-content">
+            <div id="first-slide" class="ignore-slide">
+              <a href="index.html" class="logo">YourFans</a>
+              <h2 class="tittle">INTERESTED IN WORKING WITH YourFans?</h2>
+              <p class="text">
+                Complete the following APPLICATION and one of our agents will
+                get in contact as soon as possible.
+              </p>
+              <input class="quiz-submit" type="submit" value="Start" />
+              <p>Takes 3 minutes*</p>
+            </div>
+          </div>
+          <div class="quiz-content d-none">
+            <div id="second-slide">
+              <a href="index.html" class="logo">YourFans</a>
+              <h2 class="tittle">First up, what is your name?*</h2>
+              <p class="text">(FIRST AND LAST NAME)</p>
+              <input
+                name="fullName"
+                id="name-field"
+                type="text"
+                placeholder="Type your answer here...
+            "
+              />
+              <input class="quiz-submit" type="submit" value="Next" />
+            </div>
+          </div>
+          <div class="quiz-content d-none">
+            <div id="third-slide">
+              <a href="index.html" class="logo">YourFans</a>
+              <h2 class="tittle">Cool ook, and what's your INSTAGRAM ?*</h2>
+              <input
+                name="instagram"
+                type="text"
+                placeholder="Type your answer here...
+            "
+              />
+              <input class="quiz-submit" type="submit" value="Next" />
+            </div>
+          </div>
+          <div class="quiz-content d-none">
+            <div id="fourth-slide">
+              <a href="index.html" class="logo">YourFans</a>
+              <h2 class="tittle">
+                Great. So, do you have an existing account on OnlyFans /
+                Fansly?*
+              </h2>
+              <div class="var-btn-wrapper">
+                <input name="isAccount" id="Yes-button" type="radio" value="1" />
+                <label class="var-btn" for="Yes-button">Yes</label>
+                <input name="isAccount" id="No-button" type="radio" value="2" />
+                <label class="var-btn" for="No-button">No</label>
+              </div>
+              <input class="quiz-submit" type="submit" value="Next" />
+            </div>
+          </div>
+          <div class="quiz-content d-none" id="1">
+            <div id="fifth-slide">
+              <a href="index.html" class="logo">YourFans</a>
+              <h2 class="tittle">Amazing. What is your OnlyFans / Fansly ?*</h2>
+              <input name="onlyFans" type="text" placeholder="Type your answer here..." />
+              <input class="quiz-submit" type="submit" value="Next" />
+            </div>
+          </div>
+          <div class="quiz-content d-none" id="2">
+            <div id="sixth-slide">
+              <a href="index.html" class="logo">YourFans</a>
+              <h2 class="tittle">Please fill out your contact info*</h2>
+              <div>
+                <input name="phone" type="tel" id="first-tel" maxlength="12" />
+                <input
+                  name = "email"
+                  id="first-email"
+                  type="email"
+                  placeholder="name@example.com
+                "
+                />
+              </div>
+              <input class="quiz-submit" type="submit" value="Next" />
+            </div>
+          </div>
+          <div class="quiz-content d-none">
+            <div id="seventh-slide">
+              <a href="index.html" class="logo">YourFans</a>
+              <h2 class="tittle">
+                A couple more to go! Have you worked with an OnlyFans AGENCY
+                before?*
+              </h2>
+              <div class="var-btn-wrapper">
+                <input name="isAgency" type="radio" id="Yes-button2" value="3" />
+                <label class="var-btn" for="Yes-button2">Yes</label>
+                <input name="isAgency" type="radio" id="No-button2" value="4" />
+                <label class="var-btn" for="No-button2">No</label>
+              </div>
+              <input class="quiz-submit" type="submit" value="Next" />
+            </div>
+          </div>
+          <div class="quiz-content d-none" id="3">
+            <div id="eighth-slide">
+              <a href="index.html" class="logo">YourFans</a>
+              <h2 class="tittle">Which AGENCY?*</h2>
+              <input name="agencyName" type="text" placeholder="Type your answer here... " />
+              <input class="quiz-submit" type="submit" value="Next" />
+            </div>
+          </div>
+          <div class="quiz-content d-none" id="4">
+            <div id="ninth-slide">
+              <a href="index.html" class="logo">YourFans</a>
+              <h2 class="tittle">
+                You're inching to the finish line! Are you able to work 1-2
+                hours a day to produce content?*
+              </h2>
+              <div class="var-btn-wrapper">
+                <input name="isReadyToWork" type="radio" id="Yes-button3" value="5" />
+                <label class="var-btn" for="Yes-button3">Yes</label>
+                <input name="isReadyToWork" type="radio" id="No-button3"/>
+                <label class="var-btn" for="No-button3">No</label>
+              </div>
+
+              <input type="submit" class="quiz-submit" value="Next" />
+            </div>
+          </div>
+          <div class="quiz-content d-none" id="5">
+            <div id="tenth-slide">
+              <a href="index.html" class="logo">YourFans</a>
+              <h2 class="tittle">
+                Please tell us a little bit about yourself*
+              </h2>
+              <input
+                name="description"
+                type="text"
+                placeholder="Type your answer here...
+            "
+              />
+              <input type="submit" class="quiz-submit" value="Next" />
+            </div>
+          </div>
+          <div class="quiz-content d-none">
+            <div id="eleventh-slide">
+              <a href="index.html" class="logo">YourFans</a>
+              <h2 class="tittle">Do you have any questions for YourFans?*</h2>
+              <div class="var-btn-wrapper">
+                <input name="isQuestions" type="radio" id="Yes-button4" value="7" />
+                <label class="var-btn" for="Yes-button4">Yes</label>
+                <input name="isQuestions" type="radio" id="No-button4" value="8" />
+                <label class="var-btn" for="No-button4">No</label>
+              </div>
+
+              <input type="submit" class="quiz-submit" value="Next" />
+            </div>
+          </div>
+          <div class="quiz-content d-none" id="7">
+            <div id="twelfth-slide">
+              <a href="index.html" class="logo">YourFans</a>
+              <input
+                name="question"
+                id="ans-input"
+                type="text"
+                placeholder="Type your answer here...
+            "
+              />
+              <input class="quiz-submit" type="submit" value="Yes" />
+              <div>
+                <p>Emali</p>
+                <input
+                  name="secondEmail"
+                  id="second-email"
+                  type="email"
+                  placeholder="name@example.com
+                "
+                />
+                <p>Phone number</p>
+                <input name="secomd" type="tel" id="second-tel" />
+              </div>
+            </div>
+          </div>
+          <div class="quiz-content d-none" id="8">
+            <div id="last-slide">
+              <a href="index.html" class="logo">YourFans</a>
+              <h2 class="tittle">All good, ook — we've got that.</h2>
+              <h2 class="tittle">
+                We'll contact you soon for an introduction call!
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/intlTelInput.min.js"></script>
+    <script src="../js/input-tel-mask.js"></script>
+    <script src="../js/quiz.js"></script>
+    <script src="../js/quiz-validate.js"></script>
+  </body>
+</html>

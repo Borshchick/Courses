@@ -37,7 +37,8 @@
             width: max-content
             margin: 10px auto 
             display: flex
-            justify-content: center   
+            justify-content: center 
+            text-decoration: none  
             &:hover
                 background: linear-gradient(268.57deg, #BD00FF 27.31%, #FF00A8 109.82%)
                 cursor: pointer
@@ -51,7 +52,7 @@
         font-family: Poppins
         font-weight: 400
         font-size: 20px
-@media (max-width:768px)
+@media (max-width:1000px)
     .footer
         &__wrapper
             width: 80%
@@ -64,3 +65,14 @@
             width: 80%
             margin: auto
             text-align: center
+        &__apply-button
+            a
+                font-size: 10px
+@media (max-width:640px)
+    .footer
+        &__logo
+            margin-bottom: 20px
+        &__navigation
+            margin-bottom: 20px
+        &__apply-button
+            margin-bottom: 20px

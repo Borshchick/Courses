@@ -1,0 +1,509 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.d-none {
+  display: none !important;
+}
+
+.quiz {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quiz-submit {
+  border-radius: 31px;
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 20px;
+  background: linear-gradient(268.57deg, #FF00A8 27.31%, #BD00FF 109.82%);
+  border: none;
+  padding: 11px 20px;
+  width: 15%;
+  color: white;
+  margin-top: 40px;
+}
+.quiz-submit:hover {
+  cursor: pointer;
+  background: linear-gradient(268.57deg, #BD00FF 27.31%, #FF00A8 109.82%);
+}
+
+.logo {
+  position: absolute;
+  top: 5%;
+  font-family: Cinzel Decorative;
+  font-size: 24px;
+  font-weight: 700;
+  color: black;
+  text-decoration: none;
+}
+
+.tittle {
+  font-family: Cinzel;
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+  width: 950px;
+  margin-bottom: 40px;
+}
+
+.var-btn {
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 700;
+  background: rgba(255, 255, 255, 0.4);
+  padding: 10px 80px;
+  border-radius: 7px;
+}
+.var-btn:hover {
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.5019607843);
+  transition: all 0.3s;
+}
+
+input[type=radio] {
+  display: none;
+}
+input[type=radio]:checked + label {
+  background: linear-gradient(268.57deg, #BD00FF 27.31%, #FF00A8 109.82%);
+  color: white;
+  transition: all 0.3s;
+}
+
+.var-btn-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+#first-tel {
+  width: 300px;
+  padding-left: 90px;
+}
+
+.error {
+  border: 1px solid red;
+}
+
+#first-slide {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("../img/quiz-first-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#first-slide p:nth-child(3) {
+  font-family: Poppins;
+  text-align: center;
+  width: 70%;
+  font-size: 24px;
+  font-weight: 400;
+}
+#first-slide p:nth-child(5) {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+#second-slide {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/quiz-first-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#second-slide > h2 {
+  margin-bottom: 0;
+}
+#second-slide p:nth-child(3) {
+  font-family: Poppins;
+  text-align: center;
+  width: 70%;
+  font-size: 20px;
+  font-weight: 400;
+}
+#second-slide input:nth-child(4) {
+  border: none;
+  background: transparent;
+  outline: none;
+  width: 60%;
+  color: #FFE5F6;
+  height: 30px;
+  border-bottom: 1px solid #FF00A8;
+  margin-top: 50px;
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 24px;
+}
+#second-slide input:nth-child(4)::placeholder {
+  color: #FFE5F6;
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+#third-slide {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/second-slide-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#third-slide input:nth-child(3) {
+  border: none;
+  background: transparent;
+  outline: none;
+  width: 50%;
+  color: #FFE5F6;
+  height: 30px;
+  border-bottom: 1px solid #FF00A8;
+  margin-top: 50px;
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 24px;
+}
+#third-slide input:nth-child(3)::placeholder {
+  color: #FFE5F6;
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+#fourth-slide {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/fourth-slide-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#fifth-slide {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/fourth-slide-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#fifth-slide input:nth-child(3) {
+  border: none;
+  background: transparent;
+  outline: none;
+  width: 50%;
+  color: #FFE5F6;
+  height: 30px;
+  border-bottom: 1px solid #FF00A8;
+  margin-top: 50px;
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 24px;
+}
+#fifth-slide input:nth-child(3)::placeholder {
+  color: #FFE5F6;
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+#sixth-slide {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/fourth-slide-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#sixth-slide div {
+  display: flex;
+  gap: 40px;
+}
+#sixth-slide div input {
+  border: none;
+  background: transparent;
+  outline: none;
+  width: 300px;
+  color: #FFE5F6;
+  border-bottom: 1px solid #FF00A8;
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 24px;
+}
+#sixth-slide div input::placeholder {
+  color: #FFE5F6;
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+#seventh-slide {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/seventh-slide-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#eighth-slide {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/seventh-slide-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#eighth-slide input:nth-child(3) {
+  border: none;
+  background: transparent;
+  outline: none;
+  width: 50%;
+  color: #FFE5F6;
+  height: 30px;
+  border-bottom: 1px solid #FF00A8;
+  margin-top: 50px;
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 24px;
+}
+#eighth-slide input:nth-child(3)::placeholder {
+  color: #FFE5F6;
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+#ninth-slide {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/eighth-slide-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#tenth-slide {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/tenth-slider-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#tenth-slide input:nth-child(3) {
+  border: none;
+  background: transparent;
+  outline: none;
+  width: 50%;
+  color: #FFE5F6;
+  height: 30px;
+  border-bottom: 1px solid #FF00A8;
+  margin-top: 50px;
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 24px;
+}
+#tenth-slide input:nth-child(3)::placeholder {
+  color: #FFE5F6;
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+#eleventh-slide {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/eleventh-slide-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#twelfth-slide {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/eleventh-slide-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#twelfth-slide #ans-input {
+  border: none;
+  background: transparent;
+  outline: none;
+  width: 50%;
+  color: #FFE5F6;
+  height: 30px;
+  border-bottom: 1px solid #FF00A8;
+  margin-top: 50px;
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 24px;
+}
+#twelfth-slide #ans-input::placeholder {
+  color: #FFE5F6;
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 24px;
+}
+#twelfth-slide div {
+  width: max-content;
+}
+#twelfth-slide div input {
+  border: none;
+  background: transparent;
+  outline: none;
+  width: 300px;
+  color: #FFE5F6;
+  height: 30px;
+  border-bottom: 1px solid #FF00A8;
+  margin-top: 50px;
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 24px;
+}
+#twelfth-slide div input::placeholder {
+  color: #FFE5F6;
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 24px;
+}
+#twelfth-slide div p {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: Poppins;
+  margin-top: 20px;
+}
+#twelfth-slide input[type=submit] {
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 700;
+  background: rgba(255, 255, 255, 0.4);
+  padding: 10px 80px;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  color: #FF00A8;
+  margin-bottom: 40px;
+}
+#twelfth-slide input[type=submit]:hover {
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.5019607843);
+  transition: all 0.3s;
+}
+
+#last-slide {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/last-slide-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#last-slide h2:nth-child(2) {
+  color: #FF00A8;
+}
+
+@media (max-width: 768px) {
+  .tittle {
+    font-size: 20px;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 100px;
+    justify-content: center;
+  }
+  .quiz-submit {
+    font-size: 15px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+  }
+  .var-btn {
+    font-size: 15px;
+  }
+  .var-btn-wrapper {
+    width: 50%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #sixth-slide div {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  #twelfth-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (min-width: 2000px) {
+  input {
+    max-width: 700px;
+  }
+  p {
+    max-width: 800px;
+  }
+}
+/*# sourceMappingURL=quiz.css.map */

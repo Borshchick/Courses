@@ -3,7 +3,7 @@
     background-image: url('../../../img/girls.png')
     background-repeat: no-repeat
     background-position: right top
-    background-size: 55%
+    // background-size: 55%
     // margin-bottom: 200px
 .third_screen_wrapper
     background-image: url('../../../img/space-bg-left.png')
@@ -116,6 +116,8 @@
     >img
         width: 100%
 @media (min-width: 768px) and (max-width: 1023px)
+    .third_screen_main_wrapper
+        background-size: 60%
     .third_screen_wrapper
         margin-top: -200px
     .third_screen_cards_title_wrapper
@@ -152,11 +154,11 @@
             margin: inherit
 @media (max-width: 768px)
     .third_screen_main_wrapper
+        background-size: 60%
         background-position-y: 0%
     .third_screen_wrapper
         background-size: auto
         background-position: right top
-        // margin-top: -305px
     .third_screen_cards_wrapper
         &__card
             height: fit-content

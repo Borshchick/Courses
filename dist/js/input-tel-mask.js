@@ -1,0 +1,1 @@
+const input=document.querySelector("#first-tel"),input2=(window.intlTelInput(input,{utilsScript:"https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js"}),document.querySelector("#second-tel"));window.intlTelInput(input2,{utilsScript:"https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js"});
