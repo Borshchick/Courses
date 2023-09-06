@@ -19,7 +19,13 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       }
     });
-    console.log(values);
+
+    console.log(values)
+
+    fetch("./posts.php", {
+      method: "POST",
+      body: values,
+    });
   };
   quiz_radio.forEach((i) => {
     i.addEventListener("click", function () {
