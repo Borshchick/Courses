@@ -931,6 +931,12 @@
     background-position: center 80px;
   }
 }
+@media (min-width: 1400px) {
+  .fourth_screen_card_wrapper {
+    background-position: center top;
+    height: 580px !important;
+  }
+}
 @media (min-width: 1500px) {
   .fourth_screen_logo_wrapper p {
     width: 800px;
