@@ -28,26 +28,28 @@
                     color: white
                     text-decoration: none
     &__apply-button
+        width: 100%
+        max-width: 223px
         a
             width: 100%
             max-width: 223px
             background: linear-gradient(268.57deg, #FF00A8 27.31%, #BD00FF 72.69%, #FF00A8 109.82%, #BD00FF 72.69%)
             border: none
             border-radius: 50px
-            padding: 10px 40px
+            padding: 8px 0
             color: #FAF8F0
             font-family: Poppins
             font-size: 20px
             font-weight: 600
-            width: max-content
             margin: 10px auto 
             display: flex
             justify-content: center 
-            text-decoration: none  
+            text-decoration: none 
+            transition: all 0.5s  
             &:hover
                 background-position: 185px
                 cursor: pointer
-                transition: all 0.5s 
+                
     &__link
         color: white
         width: max-content
@@ -75,12 +77,15 @@
                 font-size: 13px
 @media (max-width:640px)
     .footer
+        &__wrapper
+            display: flex
         &__logo
             margin-bottom: 20px
         &__navigation
             margin-bottom: 20px
             text-align: center
             ul
+                margin-top: 30px
                 flex-direction: column
                 gap: 10px
         &__apply-button
