@@ -245,6 +245,30 @@
   transform: rotate(180deg);
 }
 
+.header__lines-bg {
+  position: absolute;
+  left: 0;
+  top: 305px;
+  z-index: 0;
+}
+
+@media (max-width: 1280px) {
+  .header__lines-bg {
+    width: 15%;
+    top: 50vh;
+  }
+}
+@media (max-width: 1024px) {
+  .header__lines-bg {
+    width: 20%;
+    top: 53vh;
+  }
+}
+@media (max-width: 768px) {
+  .header__lines-bg {
+    display: none;
+  }
+}
 @media (min-width: 1700px) {
   .header_logo {
     font-size: 40px;
