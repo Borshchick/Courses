@@ -93,7 +93,7 @@
     &__list
         display: flex
         width: 100%
-        max-width: 900px
+        max-width: 1024px
         margin: auto
         gap: 20px
         list-style: none
@@ -139,6 +139,7 @@
     &__image
         max-width: 350px
         width: 100%
+        object-fit: contain
     &__apply-button
         margin-top: 20px
         background: linear-gradient(268.57deg, #FF00A8 27.31%, #BD00FF 72.69%, #FF00A8 109.82%, #BD00FF 72.69%)
@@ -187,14 +188,14 @@
             font-size: 20px   
     .fifth-screen-articles
         &__title
-            font-size: 20px
+            font-size: 25px
             margin-top: 50px
         &__text
-            font-size: 10px
+            font-size: 16px
             width: 90%
             max-width: 994px
         &__list
-            font-size: 10px
+            font-size: 12px
             width: 100%
             max-width: 500px
             justify-content: center
@@ -204,17 +205,20 @@
             width: 90%
             margin-top: 0
         &__second-title
-            font-size: 20px 
+            font-size: 25px 
         &__second-text
-            font-size: 10px
+            font-size: 12px
         &__apply-button
-            font-size: 10px
+            font-size: 20px
         &__image
             max-width: 265px    
-            max-height: 290px
+            // max-height: 290px
 @media (max-width:600px)
     .fifth-screen-articles
         background-size: cover
+        &__second-article
+            margin-top: 30px
+            gap: 40px
     .first-article
         &__wrapper
             display: contents
@@ -226,7 +230,7 @@
             margin-bottom: 30px
         &__text
             margin: auto
-            font-size: 12px !important
+            font-size: 20px !important
             width: 80%
         img
             width: 100%
@@ -235,6 +239,8 @@
             height: 100%
     .second-article
         display: contents
+        margin-top: 30px
+        gap: 40px
         &__tittle
             font-size: 25px
             margin: auto

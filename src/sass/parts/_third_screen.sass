@@ -82,7 +82,7 @@
     flex-wrap: wrap
     gap: 40px
     justify-content: center
-    align-items: center
+    align-items: stretch
     &__card
         // height: 500px !important
         width: 300px
@@ -90,7 +90,6 @@
         background: #02091F
         padding: 55px 25px
         border-radius: 10px
-        height: max-content
         img
             margin-bottom: 40px
         h3
@@ -169,10 +168,12 @@
     .third_screen_wrapper
         background-position: right top
     .third_screen_cards_wrapper
+        gap: 20px
         &__card
-            width: 200px
+            width: 80%
             img
                 width: 10%
+                margin-bottom: 20px
             h3
                 font-size: 15px
             p
@@ -198,9 +199,9 @@
                 background-position: center
                 gap: 30px
                 li
-                    font-size: 10px
+                    font-size: 15px
                 li:nth-child(1)
-                    font-size: 15px 
+                    font-size: 18px 
     .third_screen_quote_wrapper
         width: auto
         padding: 40px 40px

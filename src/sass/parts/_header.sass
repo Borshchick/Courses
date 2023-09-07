@@ -15,7 +15,7 @@
     display: flex
     align-items: center
     justify-content: space-between
-    padding: 10px 20px
+    padding: 16px 20px
     background-color: rgba(2, 9, 31, 0.56)
     backdrop-filter: blur(8px)
     width: 90%
@@ -31,7 +31,7 @@
     left: 8%
 
 .header_wrapper
-    margin-right: 20px
+    margin-left: -115px
     position: relative
     >ul
         display: flex
@@ -207,6 +207,10 @@
     top: 305px
     z-index: 0
 
+@media (max-width: 1024px)
+    .header_mock
+        display: none
+
 @media (max-width: 1280px)
     .header__lines-bg
         width: 15%
@@ -223,14 +227,14 @@
 
 @media (min-width: 1700px)
     .header_logo
-        font-size: 40px
+        // font-size: 40px
     .header_wrapper
-        height: 70px
+        // height: 70px
         display: flex
         align-items: center
         >ul
             >li
-                font-size: 30px
+                // font-size: 30px
     .header_content
         z-index: 4
         // transform: scale(1.1)
