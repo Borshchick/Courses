@@ -1,10 +1,9 @@
 .third_screen_main_wrapper
-    padding-top: 200px
+    padding-top: 110px
     background-image: url('../../../img/girls.png')
+    background-size: 50%
     background-repeat: no-repeat
-    background-position: right top
-    // background-size: 55%
-    // margin-bottom: 200px
+    background-position: right -2%
 .third_screen_wrapper
     background-image: url('../../../img/space-bg-left.png')
     background-size: auto
@@ -17,13 +16,12 @@
     position: relative
     top: 100px
     &__item
-        width: 350px
+        width: max-content 
         color: #FAF8F0
         font-family: Cinzel Decorative
         font-size: 36px
         font-weight: 700
-        padding-bottom: 110px
-        padding-top: 30px
+        padding: 30px 50px 110px 0
         background-image: url('../../../img/Star.png')
         background-repeat: no-repeat
         background-position-x: right
@@ -58,10 +56,11 @@
     height: max-content
     width: 80%
     margin: auto
+    margin-bottom: 50px
     padding: 15px 0
     padding-right: 20px
     h2
-        margin-top: 18%
+        margin-top: 50px
         padding: 100px 50px 50px 0
         font-family: Cinzel Decorative
         font-size: 36px
@@ -71,9 +70,14 @@
         flex-direction: row-reverse
         background-image: url('../../../img/pare-lines.png') 
         background-repeat: no-repeat
-        background-position: 100% 58px
+        background-position: right
+        background-size: contain
+        width: max-content
+        width: 100%
+        // margin-left: 60%
+        // margin-right: 25px
 .third_screen_cards_wrapper
-    width: 80%
+    max-width: 1200px
     margin: 0 auto
     display: flex
     flex-direction: row
@@ -82,12 +86,15 @@
     justify-content: center
     align-items: center
     &__card
+        height: 400px !important
         width: 300px
         border: 1px solid #FF00A8
         background: #02091F
         padding: 55px 25px
         border-radius: 10px
-        height: 300px
+        height: max-content
+        img
+            margin-bottom: 40px
         h3
             color: #FFAAE2
             font-family: Cinzel Decorative
@@ -98,6 +105,7 @@
             font-weight: 300
             font-size: 16px
             color: #FFFFFF
+            margin-bottom: 10px
 .third_screen_quote_wrapper
     width: 700px
     padding: 40px 170px
@@ -105,6 +113,7 @@
     background-image: url(../../../img/quotes.png)
     background-repeat: no-repeat
     background-position: 60px
+    text-align: center
     p
         width: 800px
         font-family: Poppins
@@ -115,18 +124,20 @@
     margin-top: 60px
     >img
         width: 100%
-@media (min-width: 768px) and (max-width: 1023px)
+@media (min-width: 768px) and (max-width: 1375px)
     .third_screen_main_wrapper
-        background-size: 60%
+        background-size: 50%
+        background-position: right 0%
     .third_screen_wrapper
-        margin-top: -200px
-    .third_screen_cards_title_wrapper
-        h2
-            background-position: right 60px !important
-            background-size: 30%  !important
+        background-size: auto
+        background-position: 10% top
     .third_screen_title_wrapper
         width: max-content
         padding-right: 40px
+    .third_screen_cards_title_wrapper 
+        h2
+            background-size: 25% !important
+            background-position: right 65% !important
     .third_screen_quote_wrapper
         width: 400px
         background-position: 94px
@@ -136,43 +147,43 @@
     .third_screen_title_wrapper
         div
             ul
+                padding-right: 50px
                 gap: 50px
-                background-position: center 22px
-                background-size: contain
-@media (min-width: 2000px)
+                background-position: 35px 20px
+    .third_screen_cards_wrapper
+        &__card
+            p
+                font-size: 20px
+@media (min-width: 1500px)
     .third_screen_main_wrapper
-        background-position: right -4%
-        background-size: 45%
+        background-position: right 2%
+        background-size: auto
+        padding-top: 50px
     .third_screen_wrapper
         background-position: center 0
         background-size: 100% 100%
         margin-top: 100px
-    .third_screen_cards_wrapper
-        width: 50%
-    .third_screen_cards_title_wrapper
-        h2
-            margin: inherit
+        
 @media (max-width: 768px)
     .third_screen_main_wrapper
         background-size: 60%
-        background-position-y: 0%
+        background-position: right 5.5%
     .third_screen_wrapper
-        background-size: auto
         background-position: right top
     .third_screen_cards_wrapper
         &__card
-            height: fit-content
+            width: 200px
             img
                 width: 10%
             h3
                 font-size: 15px
             p
-                font-size: 10px
-    .third_screen_cards_title_wrapper
+                font-size: 15px
+    .third_screen_cards_title_wrapper 
         h2
             font-size: 25px
-            background-position: bottom right
-            background-size: 50%
+            background-position: 87% 70%
+            background-size: 37%
     .third_screen_title_wrapper
         width: max-content
         padding-right: 40px
@@ -199,9 +210,7 @@
         background-position: center
         p
             width: auto
-            font-size: 10px
+            font-size: 20px
 @media (max-width:425px)
     .third_screen_main_wrapper
-        background-position: top right
-    .third_screen_wrapper
-        margin-top: -305px
+        background-position: right 7%

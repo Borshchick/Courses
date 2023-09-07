@@ -7,11 +7,10 @@
         font-family: Cinzel Decorative
         font-weight: 700
         background-image: url('../../../img/Star.png')
-        background-size: 20%
+        background-size: 17%
         background-position: right top
         background-repeat: no-repeat
-        padding-top: 30px
-        padding-right: 30px 
+        padding: 40px 60px 0 0
     &__wrapper
         margin-top: 100px
         background: #FFAAE2
@@ -20,14 +19,12 @@
         align-items: center
         justify-content: center
         padding: 30px 0
-        img
-            width: 400px
     &__text
         display: flex
         flex-direction: column
         gap: 20px
-        width: 770px
-        max-width: 60%
+        max-width: 770px
+        width: 60%
         gap: 20px
         font-family: Poppins
         font-size: 18px
@@ -37,8 +34,9 @@
     align-items: center
     justify-content: center
     margin-top: 60px
-    img
-        height: 450px
+    &__wrapper
+        display: flex
+        align-items: center
     &__tittle
         margin-bottom: 40px
         font-family: Cinzel Decorative
@@ -52,8 +50,8 @@
         padding: 40px 40px 0 0
 
     &__text
-        max-width: 90%
-        width: 580px
+        width: 90%
+        max-width: 1000px
         font-family: Poppins
         font-size: 16px
         font-weight: 400
@@ -61,10 +59,10 @@
             margin-bottom: 20px
 .fifth-screen-articles
     background-image: url('../../../img/space-bg.png')
-    background-size: cover
+    background-size: 100% 98%
     background-repeat: no-repeat
     &__first-article
-        padding-top: 150px
+        padding-top: 50px
         margin: auto
         margin-top: 40px
     &__title
@@ -74,13 +72,15 @@
         font-weight: 700
         width: max-content
         margin: auto
+        margin-bottom: 30px
         padding: 30px 25px
         background-image: url('../../../img/wave_star.png')
         background-size: 60%
         background-position: right -5px
         background-repeat: no-repeat
     &__text
-        width: 900px
+        width: 100%
+        max-width: 994px
         text-align: center
         font-family: Poppins
         font-size: 18px
@@ -88,10 +88,12 @@
         color: white
         margin: auto
         p
+            margin: auto
             margin-bottom: 20px
     &__list
         display: flex
-        width: 900px
+        width: 100%
+        max-width: 900px
         margin: auto
         gap: 20px
         list-style: none
@@ -113,6 +115,7 @@
         display: flex
         color: white
         gap: 90px
+        padding-bottom: 150px
     &__wrapper
         margin: auto
     &__second-title
@@ -134,7 +137,8 @@
         flex-direction: column
         gap: 20px
     &__image
-        width: 350px
+        max-width: 350px
+        width: 100%
     &__apply-button
         margin-top: 20px
         background: linear-gradient(268.57deg, #FF00A8 27.31%, #BD00FF 109.82%)
@@ -145,20 +149,25 @@
         font-family: Poppins
         font-size: 20px
         font-weight: 600
-        width: 20%
+        width: 100%
+        max-width: 223px
         display: flex
         justify-content: center 
         text-decoration: none
+        margin-top: 50px
         &:hover
             background: linear-gradient(268.57deg, #BD00FF 27.31%, #FF00A8 109.82%)
             cursor: pointer
             transition: background-image 0.5s linear
-@media (min-width: 601px) and (max-width: 1024px)
+@media (min-width: 601px) and (max-width: 1200px)
+    .fifth-screen-articles
+        // background-size: cover
     .first-article
         &__tittle
             font-size: 20px
+            margin-top: 40px
         &__text
-            font-size: 10px
+            font-size: 15px
             width: 50%
         &__wrapper
             height: 150px
@@ -166,20 +175,24 @@
                 width: 300px
     .second-article
         &__wrapper
-            width: 50%
+            // width: 50%
         img
-            width: 40%
-            height: 40%
+            width: 100%
+            max-width: 300px
+            height: 100%
+            max-height: 300px
         &__text
-            font-size: 10px 
+            font-size: 15px 
         &__tittle
             font-size: 20px   
     .fifth-screen-articles
         &__title
             font-size: 20px
+            margin-top: 50px
         &__text
             font-size: 10px
-            width: 80%
+            width: 90%
+            max-width: 994px
         &__list
             font-size: 10px
             width: 80%
@@ -196,19 +209,23 @@
             font-size: 10px
             width: 30%
         &__image
-            width: 40% 
-            height: 40%          
+            max-width: 200px    
+            max-height: 300px     
 @media (max-width:600px)
+    .fifth-screen-articles
+        background-size: cover
     .first-article
         &__wrapper
             display: contents
         &__tittle
             font-size: 25px
             margin: auto
+            margin-top: 40px
             paddin-bottom: 20px
+            margin-bottom: 30px
         &__text
             margin: auto
-            font-size: 15px
+            font-size: 20px !important
         img
             width: 100%
         img:nth-child(1)
@@ -221,24 +238,28 @@
             margin: auto
             margin-bottom: 20px
         &__text
-            font-size: 15px
+            font-size: 20px !important
             width: 80%
             margin: auto
+        &__wrapper
+            display: flex
+            flex-direction: column-reverse
+
     .fifth-screen-articles
         &__first-article
             margin-top: -170px
-            // padding-top: 20px
         &__title
             font-size: 25px
-            margin-top: 120px
+            margin-top: 250px
         &__text
             font-size: 15px
             width: 80%
             margin: auto
         &__list
             width: 50%
+            max-width: 200px
             margin: auto
-            font-size: 15px
+            font-size: 13px
             justify-content: center
             li
                 text-align: center
@@ -263,4 +284,4 @@
             margin: auto
             margin-bottom: 30px 
         &__image
-            width: 60%
+            max-width: 250px

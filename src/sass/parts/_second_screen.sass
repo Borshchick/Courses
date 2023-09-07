@@ -1,18 +1,15 @@
 .second_screen_main_wrapper
     margin: 0 auto
     padding: 0 50px
-    // height: 100vh
-    // background-image: url('../../../img/Spiral-Chaos.png') 
-    // background-repeat: no-repeat 
-    // background-size: contain
     background-image: url('../../../img/pink.png')
     background-repeat: no-repeat
-    background-size: 68%
+    background-size: 63% 47%
     background-position-x: right
-    background-position-y: 120px
+    background-position-y: 152px
 .second_screen_title
     margin-right: 10%
-    padding-left: 30px
+    margin-bottom: 70px
+    padding-left: 45px
     width: max-content
     margin-left: auto
     font-family: Cinzel Decorative
@@ -35,16 +32,20 @@
     justify-content: center
     display: flex
     flex-direction: column
-    width: 90%
     margin: 0 auto
     &__first_items
         justify-content: center
         display: flex
         flex-wrap: wrap
         width: 100%
+        max-width: 1200px
         gap: 30px
+        margin: auto
         div
             width: 300px
+            display: flex
+            flex-direction: column
+            align-items: center
             div
                 display: flex
                 flex-direction: row
@@ -54,16 +55,21 @@
                     text-transform: uppercase
                     color: #FF00A8
     &__second_items
+        text-align: center
         justify-content: center
         display: flex
         flex-wrap: wrap
         width: 100%
         gap: 50px
         padding-top: 150px
-        background-image: url('../../img/heart-star.png')
-        background-repeat: no-repeat
-        background-position: left 30%
+        max-width: 1500px
+        &__wrapper:nth-child(1)
+            background-image: url('../../img/heart-star.png')
+            background-repeat: no-repeat
+            background-position: 80% 30%
+            background-size: 89%
         &__wrapper
+            padding: 65px
             width: 500px
             h3
                 text-transform: uppercase
@@ -84,9 +90,10 @@
     .second_screen_items
         &__second_items
             background: none
-@media (min-width: 2000px)
+@media (min-width: 1500px)
     .second_screen_main_wrapper
-        background-size: 45%
+        background-size: 59% 46%
+        background-position: right 180px
     .second_screen_title
         padding-top: 20px
         padding-left: 60px
@@ -95,9 +102,21 @@
         background-position: -5px 0
     .second_screen_items
         &__first_items
-            width: 50%
+            width: 100%
             margin: auto
         &__second_items
-            width: 50%
+            width: 100%
+            max-width: 1700px
             margin: auto
-            background-position: left center
+            // background-position: 80% 30%
+@media (max-width: 1149px) 
+    .second_screen_main_wrapper
+        background-size: 63% 37%
+    .second_screen_items
+        &__second_items
+            &__wrapper
+                p
+                    width: 100%
+                    max-width: 300px
+                    margin: auto
+    

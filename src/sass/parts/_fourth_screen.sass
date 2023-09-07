@@ -12,6 +12,7 @@
     background-size: 90%
     height: 260px
     &__data
+        text-align: center
         h2
             color: #FF00A8
             font-family: Cinzel Decorative
@@ -48,7 +49,9 @@
         font-family: Poppins
         font-size: 20px
         font-weight: 600
-        width: 10%
+        width: 100%
+        max-width: 223px
+        max-height: 44px
         margin: 10px auto 
         display: flex
         justify-content: center 
@@ -76,6 +79,8 @@
         background-position: 20px -2px
     p
         width: 70%
+        max-width: 800px
+        text-align: center
         margin: 0 auto
         font-family: Poppins
         font-weight: 500
@@ -85,27 +90,32 @@
     background-image: url('../../../img/arc.png')
     background-repeat: no-repeat
     background-position: center center
+    background-size: cover
     padding-bottom: 60px
+    height: 840px !important
 .forth_screen_main_card_wrapper
     display: flex
     justify-content: center
     flex-direction: row
-    width: 70%
     margin: 0 auto
     gap: 30px
     padding: 30px
-    width: max-content
+    width: 90%
+    max-width: 1300px
     background: #02091F
     border-radius: 10px
+    flex-wrap: wrap
     &__card
         h3
             color: #FFAAE2
             font-family: Cinzel
             font-size: 20px
             font-weight: 700
+            margin-bottom: 30px
         &__list
-            width: 300px
+            width: 400px
             ul
+                padding: 0 35px
                 li
                     color: #FFFFFF
                     font-family: Poppins
@@ -121,16 +131,18 @@
         h2
             padding-top: 50px
             font-size: 30px
-            background-position: center 
+            background-position: center
             background-size: cover
         &__apply_button
+            width: 100%
+            max-width: 223px
             font-size: 70%
     .forth_screen_main_card_wrapper
         width: 500px
         flex-wrap: wrap
     .fourth_screen_info_wrapper
         background-position: center 80px
-@media (min-width: 2000px)
+@media (min-width: 1500px)
     .fourth_screen_logo_wrapper
         p
             width: 800px
@@ -140,10 +152,10 @@
         background-position: center -60px
     .fourth_screen_card_wrapper
         background-size: cover
-@media (max-width:700px)
+@media (max-width:1025px)
     .fourth_screen_info_wrapper
         background-size: cover
-        background-position: center 120px
+        background-position: center top
         &__data
             h2
                 font-size: 15px
@@ -154,6 +166,18 @@
         display: flex
         flex-wrap: wrap
         margin-top: 300px
+        &__card
+            h3
+                font-size: 15px
+                width: 50%
+                margin: auto
+                margin-bottom: 20px
+            &__list
+                ul
+                    li
+                        width: 200px
+                        font-size: 10px
+                        margin: auto
     .fourth_screen_title_wrapper
         h2
             font-size: 20px
@@ -161,13 +185,16 @@
             margin: 0 auto
             text-align: center 
             padding: 40px 50px 0 50px
-            background-position: center
+            background-position: center 20%
             background-size: contain
         &__apply_button
             font-size: 15px
             width: 30%
+            max-width: 223px
     .fourth_screen_logo_wrapper
         text-align: center
         margin-bottom: 40px
+        
         h2
             font-size: 20px
+            background-size: 15%

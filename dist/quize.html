@@ -26,21 +26,24 @@
           <div class="quiz-content">
             <div id="first-slide" class="ignore-slide">
               <a href="index.html" class="logo">YourFans</a>
-              <h2 class="tittle">INTERESTED IN WORKING WITH YourFans?</h2>
+              <h2 id="first-tittle" class="tittle">
+                INTERESTED IN WORKING WITH YourFans<span>?</span>
+              </h2>
               <p class="text">
                 Complete the following APPLICATION and one of our agents will
                 get in contact as soon as possible.
               </p>
               <input class="quiz-submit" type="submit" value="Start" />
-              <p>Takes 3 minutes*</p>
+              <p>Takes 3 minutes</p>
             </div>
           </div>
           <div class="quiz-content d-none">
             <div id="second-slide">
               <a href="index.html" class="logo">YourFans</a>
-              <h2 class="tittle">First up, what is your name?*</h2>
+              <h2 class="tittle">First up, what is your name?<span>*</span></h2>
               <p class="text">(FIRST AND LAST NAME)</p>
               <input
+                class="input-text"
                 name="fullName"
                 id="name-field"
                 type="text"
@@ -53,8 +56,11 @@
           <div class="quiz-content d-none">
             <div id="third-slide">
               <a href="index.html" class="logo">YourFans</a>
-              <h2 class="tittle">Cool ook, and what's your INSTAGRAM ?*</h2>
+              <h2 class="tittle">
+                Cool ook, and what's your INSTAGRAM ?<span>*</span>
+              </h2>
               <input
+                class="input-text"
                 name="instagram"
                 type="text"
                 placeholder="Type your answer here...
@@ -87,8 +93,11 @@
           <div class="quiz-content d-none" id="1">
             <div id="fifth-slide">
               <a href="index.html" class="logo">YourFans</a>
-              <h2 class="tittle">Amazing. What is your OnlyFans / Fansly ?*</h2>
+              <h2 class="tittle">
+                Amazing. What is your OnlyFans / Fansly ?<span>*</span>
+              </h2>
               <input
+                class="input-text"
                 name="onlyFans"
                 type="text"
                 placeholder="Type your answer here..."
@@ -99,16 +108,29 @@
           <div class="quiz-content d-none" id="2">
             <div id="sixth-slide">
               <a href="index.html" class="logo">YourFans</a>
-              <h2 class="tittle">Please fill out your contact info*</h2>
+              <h2 class="tittle">
+                Please fill out your contact info<span>*</span>
+              </h2>
               <div>
-                <input name="phone" type="tel" id="first-tel" maxlength="12" />
-                <input
-                  name="email"
-                  id="first-email"
-                  type="email"
-                  placeholder="name@example.com
+                <div class="contact-wrapper">
+                  <label for="first-tel">Phone number<span>*</span></label>
+                  <input
+                    name="phone"
+                    type="tel"
+                    id="first-tel"
+                    maxlength="12"
+                  />
+                </div>
+                <div class="contact-wrapper">
+                  <label for="first-email">Email<span>*</span></label>
+                  <input
+                    name="email"
+                    id="first-email"
+                    type="email"
+                    placeholder="name@example.com
                 "
-                />
+                  />
+                </div>
               </div>
               <input class="quiz-submit" type="submit" value="Next" />
             </div>
@@ -118,7 +140,7 @@
               <a href="index.html" class="logo">YourFans</a>
               <h2 class="tittle">
                 A couple more to go! Have you worked with an OnlyFans AGENCY
-                before?*
+                before?<span>*</span>
               </h2>
               <div class="var-btn-wrapper">
                 <input
@@ -137,8 +159,9 @@
           <div class="quiz-content d-none" id="3">
             <div id="eighth-slide">
               <a href="index.html" class="logo">YourFans</a>
-              <h2 class="tittle">Which AGENCY?*</h2>
+              <h2 class="tittle">Which AGENCY?<span>*</span></h2>
               <input
+                class="input-text"
                 name="agencyName"
                 type="text"
                 placeholder="Type your answer here... "
@@ -151,7 +174,7 @@
               <a href="index.html" class="logo">YourFans</a>
               <h2 class="tittle">
                 You're inching to the finish line! Are you able to work 1-2
-                hours a day to produce content?*
+                hours a day to produce content?<span>*</span>
               </h2>
               <div class="var-btn-wrapper">
                 <input
@@ -172,9 +195,10 @@
             <div id="tenth-slide">
               <a href="index.html" class="logo">YourFans</a>
               <h2 class="tittle">
-                Please tell us a little bit about yourself*
+                Please tell us a little bit about yourself<span>*</span>
               </h2>
               <input
+                class="input-text"
                 name="description"
                 type="text"
                 placeholder="Type your answer here...
@@ -186,7 +210,9 @@
           <div class="quiz-content d-none">
             <div id="eleventh-slide">
               <a href="index.html" class="logo">YourFans</a>
-              <h2 class="tittle">Do you have any questions for YourFans?*</h2>
+              <h2 class="tittle">
+                Do you have any questions for YourFans?<span>*</span>
+              </h2>
               <div class="var-btn-wrapper">
                 <input
                   name="isQuestions"
@@ -214,6 +240,7 @@
             <div id="twelfth-slide">
               <a href="index.html" class="logo">YourFans</a>
               <input
+                class="input-text"
                 name="question"
                 id="ans-input"
                 type="text"
@@ -222,7 +249,7 @@
               />
               <input class="quiz-submit final" type="submit" value="Yes" />
               <div>
-                <p>Emali</p>
+                <p>Email</p>
                 <input
                   name="secondEmail"
                   id="second-email"
@@ -238,8 +265,10 @@
           <div class="quiz-content d-none" id="8">
             <div id="last-slide">
               <a href="index.html" class="logo">YourFans</a>
-              <h2 class="tittle">All good, ook — we've got that.</h2>
-              <h2 class="tittle">
+              <h2 id="last-tittle" class="tittle">
+                All good, ook — we've got that.
+              </h2>
+              <h2 id="last-tittle2" class="tittle">
                 We'll contact you soon for an introduction call!
               </h2>
             </div>

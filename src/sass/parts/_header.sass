@@ -17,16 +17,16 @@
     padding: 10px 20px
     background-color: rgba(2, 9, 31, 0.56)
     backdrop-filter: blur(8px)
-    width: 80%
+    width: 90%
     margin: 0 auto
     border-radius: 50px
-    gap: 50px
+    // gap: 50px
 .header_logo
     font-size: 20px
     font-weight: 700
     font-family: Cinzel Decorative
     color: #FAF8F0
-    position: relative
+    position: absolute
     left: 8%
 
 .header_wrapper
@@ -68,8 +68,8 @@
     margin-top: 120px
     background-image: url('../../../img/Rond.png')
     background-repeat: no-repeat
-    background-position-x: 90%
-    background-position-y: 90%
+    background-position-x: 95%
+    background-position-y: bottom
     
 .header_content
     display: flex
@@ -108,6 +108,8 @@
         font-size: 20px
         font-weight: 600
         width: 30%
+        max-width: 223px
+        max-height: 44px
         margin: 10px auto 
         display: flex
         justify-content: center 
@@ -125,6 +127,11 @@
         width: 100%
         padding: 0
 .header_burger
+    &__arrow
+        font-size: 32px
+        position: absolute
+        left: 90%
+        top: -10%
     &__items
         position: fixed
         top: 0
@@ -174,7 +181,7 @@
 .active_burger_bnt
     >span
         &:nth-of-type(1)
-            display: none
+            transform: translate(-50%, 0%) rotate(45deg)
         &:nth-of-type(2)
             width: 30px
             top: 50%
@@ -188,10 +195,10 @@
     transform: translateX(0)
     z-index: 100
 .header_separator
-    height: 30%
+    height: 15%
     background-image: linear-gradient(180deg, #ECE2E2 0%, rgba(236, 226, 226, 0) 100%)
     transform: rotate(180deg)
-@media (min-width: 2000px)
+@media (min-width: 1700px)
     .header_logo
         font-size: 40px
     .header_wrapper
@@ -204,19 +211,20 @@
     .header_content
         z-index: 4
         transform: scale(1.5)
-@media (min-width:1000px)
+@media (min-width:901px)
+    .header_logo
+        // position: absolute
     .header_burger
         display: none
         &__icon
             left: 600%
-@media (max-width:768px)
+@media (max-width:900px)
     .header_navigation_main_wrapper
         backdrop-filter: none
     .header_wrapper
         display: none      
     .header_content
         max-width: 100%
-        // margin: 0 auto
         &__text:nth-child(1)
             font-size: 16px
         &__text:nth-child(3)
@@ -230,7 +238,26 @@
     .header_content_wrapper
         background-size: 80px
         background-position: 90% 90%
-@media (min-width: 768px) and (max-width: 1024px)
     .header_burger
         &__icon
-            left: 600%
+            left: 400%
+@media (min-width: 500px) and (max-width: 1024px)
+    .header_wrapper
+        margin: auto
+        gap: 20px !important
+    .header_content
+        max-width: 100%
+        &__text:nth-child(1)
+            font-size: 26px
+        &__text:nth-child(3)
+            font-size: 20px
+            width: 100%
+        h2
+            font-size: 50px
+    .header_burger
+        &__icon
+            left: 800%
+@media (max-width:600px) and (min-width: 450px)
+    .header_burger
+        &__icon
+            left: 700% !important

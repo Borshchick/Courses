@@ -16,6 +16,8 @@
 }
 
 .quiz-submit {
+  max-width: 223px;
+  width: 100%;
   border-radius: 31px;
   font-family: Poppins;
   font-weight: 600;
@@ -23,11 +25,11 @@
   background: linear-gradient(268.57deg, #FF00A8 27.31%, #BD00FF 109.82%);
   border: none;
   padding: 11px 20px;
-  width: 15%;
   color: white;
   margin-top: 40px;
 }
 .quiz-submit:hover {
+  transition: background 0.5s ease;
   cursor: pointer;
   background: linear-gradient(268.57deg, #BD00FF 27.31%, #FF00A8 109.82%);
 }
@@ -50,6 +52,9 @@
   width: 950px;
   margin-bottom: 40px;
 }
+.tittle span {
+  color: #3F5CFF;
+}
 
 .var-btn {
   font-family: Poppins;
@@ -69,9 +74,10 @@ input[type=radio] {
   display: none;
 }
 input[type=radio]:checked + label {
-  background: linear-gradient(268.57deg, #BD00FF 27.31%, #FF00A8 109.82%);
-  color: white;
-  transition: all 0.3s;
+  color: #FF00A8;
+  border: 1px solid #FF00A8;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4));
+  transition: all 0.1s;
 }
 
 .var-btn-wrapper {
@@ -87,6 +93,23 @@ input[type=radio]:checked + label {
 
 .error {
   border: 1px solid red;
+}
+
+.input-text {
+  padding-bottom: 20px;
+}
+
+.contact-wrapper {
+  flex-direction: column;
+}
+.contact-wrapper label {
+  margin-bottom: -25px;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 400;
+}
+.contact-wrapper label span {
+  color: #3F5CFF;
 }
 
 #first-slide {
@@ -109,9 +132,18 @@ input[type=radio]:checked + label {
   font-weight: 400;
 }
 #first-slide p:nth-child(5) {
+  margin-top: 10px;
   font-family: Poppins;
   font-weight: 400;
   font-size: 15px;
+}
+#first-slide p:nth-child(5)::after {
+  content: "*";
+  color: #3F5CFF;
+}
+
+#first-tittle span {
+  color: #FF00A8;
 }
 
 #second-slide {
@@ -429,6 +461,9 @@ input[type=radio]:checked + label {
   font-family: Poppins;
   margin-top: 20px;
 }
+#twelfth-slide div p:nth-child(1) {
+  margin-bottom: -30px;
+}
 #twelfth-slide input[type=submit] {
   font-family: Poppins;
   font-size: 24px;
@@ -463,9 +498,12 @@ input[type=radio]:checked + label {
   color: #FF00A8;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
+  .text {
+    font-size: 15px !important;
+  }
   .tittle {
-    font-size: 20px;
+    font-size: 20px !important;
     width: 80%;
     display: flex;
     flex-wrap: wrap;

@@ -11,6 +11,8 @@
     justify-content: center
     align-items: center
 .quiz-submit
+        max-width: 223px
+        width: 100%
         border-radius: 31px
         font-family: Poppins
         font-weight: 600
@@ -18,10 +20,10 @@
         background: linear-gradient(268.57deg, #FF00A8 27.31%, #BD00FF 109.82%)
         border: none
         padding: 11px 20px
-        width: 15%
         color: white
         margin-top: 40px
         &:hover
+            transition: background 0.5s ease
             cursor: pointer
             background: linear-gradient(268.57deg, #BD00FF 27.31%, #FF00A8 109.82%)
 .logo
@@ -39,6 +41,8 @@
         text-align: center
         width: 950px
         margin-bottom: 40px
+        span
+            color: #3F5CFF
 .var-btn
     font-family: Poppins
     font-size: 24px
@@ -53,9 +57,11 @@
 input[type="radio"]
         display: none
         &:checked + label
-            background: linear-gradient(268.57deg, #BD00FF 27.31%, #FF00A8 109.82%)
-            color: white
-            transition: all .3s
+            // background: linear-gradient(268.57deg, #BD00FF 27.31%, #FF00A8 109.82%)
+            color: #FF00A8
+            border: 1px solid #FF00A8
+            background: linear-gradient(0deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4))
+            transition: all .1s
 .var-btn-wrapper
     display: flex
     flex-direction: row
@@ -65,6 +71,17 @@ input[type="radio"]
     padding-left: 90px
 .error
     border: 1px solid red
+.input-text
+    padding-bottom: 20px
+.contact-wrapper
+    flex-direction: column
+    label
+        margin-bottom: -25px
+        font-family: Poppins
+        font-size: 18px
+        font-weight: 400
+        span
+            color: #3F5CFF
 #first-slide
     width: 100vw
     height: 100vh
@@ -83,9 +100,17 @@ input[type="radio"]
         font-size: 24px
         font-weight: 400
     p:nth-child(5)
+        margin-top: 10px
         font-family: Poppins
         font-weight: 400
         font-size: 15px
+        &::after
+            content: "*"
+            color: #3F5CFF
+#first-tittle
+    span
+        color: #FF00A8
+
 #second-slide
     width: 100vw
     height: 100vh
@@ -359,6 +384,8 @@ input[type="radio"]
             font-weight: 400
             font-family: Poppins
             margin-top: 20px
+        p:nth-child(1)
+            margin-bottom: -30px
     input[type="submit"]
         font-family: Poppins
         font-size: 24px
@@ -387,9 +414,14 @@ input[type="radio"]
     background-position: center
     h2:nth-child(2)
         color: #FF00A8
-@media (max-width: 768px)
+// #last-tittle
+//     &::before
+//         content: none
+@media (max-width: 1000px)
+    .text
+        font-size: 15px !important
     .tittle
-        font-size: 20px
+        font-size: 20px !important
         width: 80%
         display: flex
         flex-wrap: wrap
