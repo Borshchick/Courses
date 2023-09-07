@@ -1,7 +1,8 @@
 .fourth_screen_main_wrapper
     margin-top: 100px
 .fourth_screen_info_wrapper
-    width: 70%
+    border-radius: 200%
+    width: 35%
     margin: 0 auto
     display: flex
     gap: 30px
@@ -10,7 +11,7 @@
     background-repeat: no-repeat 
     background-position: center 20px
     background-size: 90%
-    height: 260px
+    height: 360px
     &__data
         text-align: center
         h2
@@ -41,7 +42,7 @@
         font-weight: 700
         padding-bottom: 50px
     &__apply_button
-        background: linear-gradient(268.57deg, #FF00A8 27.31%, #BD00FF 109.82%)
+        background: linear-gradient(268.57deg, #FF00A8 27.31%, #BD00FF 72.69%, #FF00A8 109.82%, #BD00FF 72.69%)
         border: none
         border-radius: 50px
         padding: 13px 40px
@@ -57,9 +58,9 @@
         justify-content: center 
         text-decoration: none
         &:hover
-            background: linear-gradient(268.57deg, #BD00FF 27.31%, #FF00A8 109.82%)
+            background-position: 310px
             cursor: pointer
-            transition: background-image 0.5s linear
+            transition: all 0.5s 
 .fourth_screen_logo_wrapper
     display: flex
     flex-direction: column
@@ -149,13 +150,14 @@
             text-align: center
     .fourth_screen_info_wrapper
         background-size: auto
-        background-position: center -60px
+        background-position: center 0px
     .fourth_screen_card_wrapper
         background-size: cover
 @media (max-width:1025px)
     .fourth_screen_info_wrapper
         background-size: cover
-        background-position: center top
+        background-position: center -20%
+        height: 180px
         &__data
             h2
                 font-size: 15px
@@ -184,7 +186,7 @@
             width: 70%
             margin: 0 auto
             text-align: center 
-            padding: 40px 50px 0 50px
+            padding: 40px 50px 40px 50px
             background-position: center 20%
             background-size: contain
         &__apply_button
@@ -198,3 +200,12 @@
         h2
             font-size: 20px
             background-size: 15%
+@media (max-width: 1440px) and (min-width: 1025px)
+    .fourth_screen_info_wrapper
+        background-position: center 80px !important
+@media (max-width: 600px)
+    .fourth_screen_info_wrapper
+        background-size: 130%
+        height: 120px
+        border-radius: 28%
+        width: 40%

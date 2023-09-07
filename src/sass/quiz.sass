@@ -50,6 +50,7 @@
     background: #FFFFFF66
     padding: 10px 80px
     border-radius: 7px
+    border: 1px solid transparent
     &:hover
         cursor: pointer
         background: #FFFFFF80
@@ -82,6 +83,15 @@ input[type="radio"]
         font-weight: 400
         span
             color: #3F5CFF
+#first-email
+    padding-bottom: 15px
+#first-tel
+    padding-bottom: 15px
+#second-email
+    padding-bottom: 15px
+#second-tel
+    padding-bottom: 15px
+    height: 45px !important
 #first-slide
     width: 100vw
     height: 100vh
@@ -228,6 +238,7 @@ input[type="radio"]
     div
         display: flex
         gap: 40px
+        align-items: flex-start !important
         input
             border: none
             background: transparent
@@ -385,7 +396,7 @@ input[type="radio"]
             font-family: Poppins
             margin-top: 20px
         p:nth-child(1)
-            margin-bottom: -30px
+            margin-bottom: -45px !important
     input[type="submit"]
         font-family: Poppins
         font-size: 24px
@@ -395,6 +406,8 @@ input[type="radio"]
         border-radius: 7px
         display: flex
         justify-content: center
+        align-items: center
+        flex-wrap: wrap
         color: #FF00A8
         margin-bottom: 40px
         &:hover
@@ -422,8 +435,8 @@ input[type="radio"]
         font-size: 15px !important
     .tittle
         font-size: 20px !important
-        width: 80%
-        display: flex
+        width: 100%
+        // display: flex
         flex-wrap: wrap
         text-align: center
         margin-top: 100px

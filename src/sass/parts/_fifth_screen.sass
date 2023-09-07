@@ -141,7 +141,7 @@
         width: 100%
     &__apply-button
         margin-top: 20px
-        background: linear-gradient(268.57deg, #FF00A8 27.31%, #BD00FF 109.82%)
+        background: linear-gradient(268.57deg, #FF00A8 27.31%, #BD00FF 72.69%, #FF00A8 109.82%, #BD00FF 72.69%)
         border: none
         border-radius: 50px
         padding: 13px 40px
@@ -156,9 +156,9 @@
         text-decoration: none
         margin-top: 50px
         &:hover
-            background: linear-gradient(268.57deg, #BD00FF 27.31%, #FF00A8 109.82%)
+            background-position: 240px
             cursor: pointer
-            transition: background-image 0.5s linear
+            transition: all 0.5s 
 @media (min-width: 601px) and (max-width: 1200px)
     .fifth-screen-articles
         // background-size: cover
@@ -167,7 +167,7 @@
             font-size: 20px
             margin-top: 40px
         &__text
-            font-size: 15px
+            font-size: 12px
             width: 50%
         &__wrapper
             height: 150px
@@ -182,7 +182,7 @@
             height: 100%
             max-height: 300px
         &__text
-            font-size: 15px 
+            font-size: 12px 
         &__tittle
             font-size: 20px   
     .fifth-screen-articles
@@ -195,11 +195,13 @@
             max-width: 994px
         &__list
             font-size: 10px
-            width: 80%
+            width: 100%
+            max-width: 500px
             justify-content: center
             background-size: contain
             background-position: top
         &__second-article
+            width: 90%
             margin-top: 0
         &__second-title
             font-size: 20px 
@@ -209,8 +211,8 @@
             font-size: 10px
             width: 30%
         &__image
-            max-width: 200px    
-            max-height: 300px     
+            max-width: 265px    
+            max-height: 290px
 @media (max-width:600px)
     .fifth-screen-articles
         background-size: cover
@@ -225,7 +227,8 @@
             margin-bottom: 30px
         &__text
             margin: auto
-            font-size: 20px !important
+            font-size: 12px !important
+            width: 80%
         img
             width: 100%
         img:nth-child(1)
@@ -267,7 +270,7 @@
             flex-direction: column
             flex-wrap: wrap
             align-items: center
-            width: 100%
+            width: 90%
             // display: contents
         &__second-title
             font-size: 25px
@@ -275,7 +278,7 @@
             margin-bottom: 20px
         &__second-text
             font-size: 15px
-            width: 80%
+            // width: 80%
             margin: auto
             margin-bottom: 30px
         &__apply-button
