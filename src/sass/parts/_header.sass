@@ -1,17 +1,27 @@
+
+video
+    position: absolute
+    width: 100%
+    height: 100%
+    object-fit: cover
+    top: 0
+    left: 0
 .header
-  background-image: url('../../../img/header-background.png')
-  background-size: cover
-  background-repeat: no-repeat
-  margin-bottom: 30px
-  background-position: center
+    
+    background-size: cover
+    background-repeat: no-repeat
+    margin-bottom: 30px
+    background-position: center
 .header_main_wrapper
-    background-image: url('../../../img/Noise.png')
     padding-top: 17px
-    height: 97.5vh
+    height: 98.5vh
     display: flex
     flex-direction: column
-    // justify-content: space-between
+    position: relative
+    z-index: 2
+    background-image: url('../../../img/Noise.png')
 .header_navigation_main_wrapper
+    z-index: 4
     display: flex
     align-items: center
     justify-content: space-between
@@ -58,13 +68,14 @@
                     font-size: 20px
                     color: #FF00A8
 .header_navigation_wrapper
-    // margin: 0 auto
+    z-index: 4
 .header_content_wrapper
     height: 100%
     display: flex
     flex-direction: column
     justify-content: center
     align-items: center
+    z-index: 2
 .header_content_wrapper
     margin-top: 120px
     background-image: url('../../../img/Rond.png')
@@ -119,11 +130,8 @@
         &:hover
             background-position: 290px
             cursor: pointer
-            
-.header_content_image
-    // position: relative
 .header_separator
-    margin: -10px
+    margin: -9px
     &__image
         z-index: 2
         width: 100%
@@ -205,7 +213,7 @@
     position: absolute
     left: 0
     top: 305px
-    z-index: 0
+    z-index: 3
 
 @media (max-width: 1024px)
     .header_mock
@@ -225,7 +233,9 @@
     .header__lines-bg
         display: none
 
-@media (min-width: 1700px)
+@media (min-width: 1500px)
+    // video
+    //     transform: scale(1.25)
     .header_logo
         // font-size: 40px
     .header_wrapper
@@ -251,19 +261,19 @@
     .header_content
         max-width: 100%
         &__text:nth-child(1)
-            font-size: 16px
+            font-size: 22px
         &__text:nth-child(3)
-            font-size: 10px
+            font-size: 18px
             width: 100%
         h2
-            font-size: 40px
+            font-size: 45px
         &__button
-            font-size: 15px
+            font-size: 18px
             width: 50%
             max-width: 223px
     .header_content_wrapper
         background-size: 80px
-        background-position: 90% 90%
+        background-position: 95% 100%
     .header_burger
         &__icon
             left: 400%
