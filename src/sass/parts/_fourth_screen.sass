@@ -101,7 +101,7 @@
     margin: 0 auto
     gap: 30px
     padding: 30px
-    width: 90%
+    // width: 90%
     max-width: 1300px
     background: #02091F
     border-radius: 10px
@@ -164,9 +164,9 @@
         height: 180px
         &__data
             h2
-                font-size: 15px
+                font-size: 18px
             p
-                font-size: 10px
+                font-size: 15px
     .forth_screen_main_card_wrapper
         width: 79%
         display: flex
@@ -220,6 +220,11 @@
         height: 120px
         border-radius: 28%
         width: 40%
+        &__data
+            h2
+                font-size: 15px !important
+            p
+                font-size: 10px !important
 @media (max-width: 450px)
     .forth_screen_main_card_wrapper
         &__card
@@ -230,3 +235,6 @@
                 ul
                     li
                         font-size: 14px
+@media (max-width:1320px) and (min-width: 1026px)
+    .forth_screen_main_card_wrapper
+        width: 60%

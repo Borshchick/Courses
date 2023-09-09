@@ -20,6 +20,7 @@
         justify-content: center
         padding: 30px 0
     &__text
+        padding-left: 20px
         display: flex
         flex-direction: column
         gap: 20px
@@ -161,29 +162,22 @@
             background-position: 240px
             cursor: pointer
 @media (min-width: 601px) and (max-width: 1200px)
-    .fifth-screen-articles
-        // background-size: cover
     .first-article
         &__tittle
-            font-size: 20px
-            margin-top: 40px
+            font-size: 36px !important
+            margin-top: 150px
         &__text
-            font-size: 12px
-            width: 50%
+            font-size: 15px
+            padding-left: 20px
         &__wrapper
-            height: 200px
+            height: 275px
             img
                 width: 300px
-    .second-article
-        &__wrapper
-            // width: 50%
         img
             width: 100%
             max-width: 300px
-            height: 100%
-            max-height: 300px
         &__text
-            font-size: 12px 
+            font-size: 15px 
         &__tittle
             font-size: 20px   
     .fifth-screen-articles
@@ -204,12 +198,16 @@
         &__second-article
             width: 90%
             margin-top: 0
+            flex-direction: column
+            align-items: center
         &__second-title
             font-size: 25px 
         &__second-text
-            font-size: 12px
+            font-size: 15px
         &__apply-button
             font-size: 20px
+            margin: auto
+            margin-top: 50px
         &__image
             max-width: 265px    
             // max-height: 290px
@@ -276,7 +274,6 @@
             flex-wrap: wrap
             align-items: center
             width: 90%
-            // display: contents
         &__second-title
             font-size: 25px
             margin: auto
@@ -292,3 +289,4 @@
             margin-bottom: 30px 
         &__image
             max-width: 250px
+
