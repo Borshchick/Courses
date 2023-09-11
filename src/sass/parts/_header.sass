@@ -7,7 +7,7 @@ video
     top: 0
     left: 0
 .header
-    
+    height: 100%
     background-size: cover
     background-repeat: no-repeat
     margin-bottom: 30px
@@ -212,7 +212,7 @@ video
     position: absolute
     left: 0
     top: 305px
-    z-index: 3
+    z-index: 2
 
 @media (max-width: 1024px)
     .header_mock
@@ -238,12 +238,12 @@ video
         align-items: center
     .header_content
         z-index: 4
-@media (min-width:1024px)
+@media (min-width:1025px)
     .header_burger
         display: none
         &__icon
             left: 600%
-@media (max-width:1023px)
+@media (max-width:1024px)
     .header_navigation_main_wrapper
         backdrop-filter: none
     .header_wrapper
