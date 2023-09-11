@@ -893,6 +893,7 @@ video {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  padding-bottom: 140px;
 }
 
 .forth_screen_main_card_wrapper {
@@ -956,6 +957,7 @@ video {
 }
 @media (min-width: 1400px) {
   .fourth_screen_card_wrapper {
+    padding-bottom: 45px;
     background-position: center bottom;
     height: 580px !important;
   }
@@ -1028,9 +1030,6 @@ video {
   .fourth_screen_logo_wrapper h2 {
     font-size: 20px;
     background-size: 15%;
-  }
-  .fourth_screen_card_wrapper {
-    padding-bottom: 190px;
   }
 }
 @media (max-width: 1440px) and (min-width: 1025px) {
