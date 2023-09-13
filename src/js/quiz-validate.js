@@ -2,7 +2,6 @@ const phoneInput = document.querySelector("#first-tel");
 phoneInput.addEventListener("input", function () {
   const sanitizedValue = phoneInput.value.replace(/\D/g, "");
   phoneInput.value = sanitizedValue;
-  console.log(phoneInput.value);
 });
 
 const emailInput = document.querySelector("#first-email");

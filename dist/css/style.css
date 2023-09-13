@@ -1766,16 +1766,16 @@ video {
   font-family: Poppins;
   font-weight: 600;
   font-size: 20px;
-  background: linear-gradient(268.57deg, #FF00A8 27.31%, #BD00FF 109.82%);
+  background: linear-gradient(268.57deg, #FF00A8 27.31%, #BD00FF 72.69%, #FF00A8 109.82%, #BD00FF 72.69%);
   border: none;
   padding: 11px 20px;
   color: white;
   margin-top: 40px;
-  transition: background 0.5s ease;
+  transition: all 0.3s ease;
 }
 .quiz-submit:hover {
   cursor: pointer;
-  background: linear-gradient(268.57deg, #BD00FF 27.31%, #FF00A8 109.82%);
+  background-position: 200px;
 }
 
 .logo {
@@ -1831,13 +1831,26 @@ input[type=radio]:checked + label {
   gap: 40px;
 }
 
+.quiz-error {
+  display: none;
+  color: red;
+  font-size: 15px;
+  font-family: Poppins;
+}
+
 #first-tel {
   width: 300px;
   padding-left: 90px;
 }
 
 .error {
-  border: 1px solid red;
+  border-bottom: 2px solid red !important;
+}
+
+.quiz-email-error {
+  color: red;
+  font-size: 15px;
+  font-family: Poppins;
 }
 
 .input-text {
@@ -2041,7 +2054,7 @@ input[type=radio]:checked + label {
 }
 #sixth-slide div {
   display: flex;
-  gap: 40px;
+  gap: 30px;
   align-items: flex-start !important;
 }
 #sixth-slide div input {

@@ -50,6 +50,7 @@
                 placeholder="Type your answer here...
             "
               />
+              <p class="quiz-error">Required!</p>
               <input class="quiz-submit" type="submit" value="Next" />
             </div>
           </div>
@@ -66,6 +67,7 @@
                 placeholder="Type your answer here...
             "
               />
+              <p class="quiz-error">Required!</p>
               <input class="quiz-submit" type="submit" value="Next" />
             </div>
           </div>
@@ -102,6 +104,7 @@
                 type="text"
                 placeholder="Type your answer here..."
               />
+              <p class="quiz-error">Required!</p>
               <input class="quiz-submit" type="submit" value="Next" />
             </div>
           </div>
@@ -115,21 +118,26 @@
                 <div class="contact-wrapper">
                   <label for="first-tel">Phone number<span>*</span></label>
                   <input
+                    class="input-text"
                     name="phone"
                     type="tel"
                     id="first-tel"
                     maxlength="12"
                   />
+                  <p class="quiz-error">Required!</p>
                 </div>
                 <div class="contact-wrapper">
                   <label for="first-email">Email<span>*</span></label>
                   <input
+                    class="input-text"
                     name="email"
                     id="first-email"
                     type="email"
                     placeholder="name@example.com
                 "
                   />
+                  <p class="quiz-error">Required!</p>
+                  <p class="quiz-email-error"></p>
                 </div>
               </div>
               <input class="quiz-submit" type="submit" value="Next" />
@@ -166,6 +174,7 @@
                 type="text"
                 placeholder="Type your answer here... "
               />
+              <p class="quiz-error">Required!</p>
               <input class="quiz-submit" type="submit" value="Next" />
             </div>
           </div>
@@ -204,6 +213,7 @@
                 placeholder="Type your answer here...
             "
               />
+              <p class="quiz-error">Required!</p>
               <input type="submit" class="quiz-submit" value="Next" />
             </div>
           </div>
@@ -246,18 +256,22 @@
                 type="text"
                 placeholder="Type your answer here..."
               />
+              <p class="quiz-error">Required!</p>
               <input id="last-btn" class="quiz-submit final" type="submit" value="Yes" />
               <div>
                 <p>Email</p>
                 <input
+                  class="input-text"
                   name="secondEmail"
                   id="second-email"
                   type="email"
                   placeholder="name@example.com
                 "
                 />
+                <p class="quiz-error">Required!</p>
                 <p>Phone number</p>
-                <input name="secomd" type="tel" id="second-tel" />
+                <input class="input-text" name="secomd" type="tel" id="second-tel" />
+                <p class="quiz-error">Required!</p>
               </div>
             </div>
           </div>

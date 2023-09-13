@@ -1,1 +1,0 @@
-for(var currentUrl=window.location.href,links=document.querySelectorAll(".header_wrapper ul li a"),i=0;i<links.length;i++){var linkUrl=links[i].href;currentUrl===linkUrl&&links[i].classList.add("active")}
