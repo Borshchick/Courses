@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
 
-    console.log(values);
+    // console.log(values);
 
     fetch("./posts.php", {
       method: "POST",
@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
       }
 
-      console.log(areTextInputsFilled, isRadioChecked);
+      // console.log(areTextInputsFilled, isRadioChecked);
 
       if (
         areTextInputsFilled ||

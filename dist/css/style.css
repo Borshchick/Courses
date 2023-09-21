@@ -2277,6 +2277,9 @@ input[type=radio]:checked + label {
 }
 
 @media (max-width: 1000px) {
+  .input-text::placeholder {
+    font-size: 15px !important;
+  }
   .text {
     font-size: 15px !important;
   }
