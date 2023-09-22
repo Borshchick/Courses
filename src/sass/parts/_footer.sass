@@ -6,7 +6,7 @@
         display: flex
         color: white
         justify-content: space-around
-        align-items: center
+        align-items: flex-start
     &__logo
         font-family: Cinzel Decorative
         font-size: 20px
@@ -30,6 +30,7 @@
     &__apply-button
         width: 100%
         max-width: 223px
+        margin-top: -5px
         a
             width: 100%
             max-width: 223px
@@ -41,7 +42,8 @@
             font-family: Poppins
             font-size: 20px
             font-weight: 600
-            margin: 10px auto 
+            margin: auto 
+            margin-bottom: 10px
             display: flex
             justify-content: center 
             text-decoration: none 
@@ -71,9 +73,9 @@
         display: block
         color: white
         width: max-content
-        // margin: auto
+        margin: auto
         margin-top: 20px
-        // padding-bottom: 10px
+        padding-bottom: 10px
         font-family: Poppins
         font-weight: 400
         display: flex
@@ -113,6 +115,7 @@
             margin-bottom: 20px
             font-size: 25px
         &__navigation
+            margin: auto
             margin-bottom: 20px
             text-align: center
             ul
@@ -121,6 +124,7 @@
                 gap: 10px
                 font-size: 18px
         &__apply-button
+            margin: auto
             margin-bottom: 20px
 @media (min-width: 640px)
     .footer
