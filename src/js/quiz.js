@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
 
-    // console.log(values);
+    console.log(values);
 
     fetch("./posts.php", {
       method: "POST",
