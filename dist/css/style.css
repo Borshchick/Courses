@@ -1623,12 +1623,17 @@ video {
   height: max-content;
   background: #02091F;
 }
+.footer__container {
+  max-width: 1258px;
+  margin: auto;
+  padding: 0 20px;
+}
 .footer__wrapper {
-  padding-top: 20px;
+  padding-top: 32px;
   display: flex;
   color: white;
-  justify-content: space-around;
-  align-items: flex-start;
+  justify-content: space-between;
+  align-items: center;
 }
 .footer__logo {
   font-family: Cinzel Decorative;
@@ -1641,7 +1646,7 @@ video {
   font-family: Lato;
   font-size: 16px;
   font-weight: 600;
-  gap: 40px;
+  gap: 107px;
 }
 .footer__navigation ul {
   width: inherit;
@@ -1658,7 +1663,6 @@ video {
 .footer__apply-button {
   width: 100%;
   max-width: 223px;
-  margin-top: -5px;
 }
 .footer__apply-button a {
   width: 100%;
@@ -1686,7 +1690,6 @@ video {
   color: white;
   width: max-content;
   margin: auto;
-  margin-top: 20px;
   padding-bottom: 20px;
   font-family: Poppins;
   font-weight: 400;
@@ -1702,8 +1705,7 @@ video {
   display: block;
   color: white;
   width: max-content;
-  margin: auto;
-  margin-top: 20px;
+  margin-top: 8px;
   padding-bottom: 10px;
   font-family: Poppins;
   font-weight: 400;
@@ -1724,7 +1726,7 @@ video {
 
 @media (max-width: 1000px) {
   .footer__wrapper {
-    width: 90%;
+    width: 100%;
     margin: auto;
     flex-wrap: wrap;
   }
@@ -1737,11 +1739,17 @@ video {
     margin: auto;
     text-align: center;
   }
+  .footer__apply-button {
+    max-width: 110px;
+  }
   .footer__apply-button a {
     font-size: 13px;
   }
+  .footer__email {
+    margin-inline: auto;
+  }
 }
-@media (max-width: 640px) {
+@media (max-width: 815px) {
   .footer__wrapper {
     display: flex;
     flex-direction: column;
@@ -1765,8 +1773,11 @@ video {
     margin: auto;
     margin-bottom: 20px;
   }
+  .footer__email {
+    margin-top: 0;
+  }
 }
-@media (min-width: 640px) {
+@media (min-width: 815px) {
   .footer__navigation {
     display: flex;
   }

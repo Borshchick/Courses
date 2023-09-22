@@ -1,12 +1,18 @@
 .footer
     height: max-content
     background: #02091F
+
+    &__container
+        max-width: 1258px
+        margin: auto
+        padding: 0 20px
+
     &__wrapper
-        padding-top: 20px
+        padding-top: 32px
         display: flex
         color: white
-        justify-content: space-around
-        align-items: flex-start
+        justify-content: space-between
+        align-items: center
     &__logo
         font-family: Cinzel Decorative
         font-size: 20px
@@ -17,7 +23,7 @@
         font-family: Lato
         font-size: 16px
         font-weight: 600
-        gap: 40px
+        gap: 107px
         ul
             width: inherit
             display: flex
@@ -30,7 +36,6 @@
     &__apply-button
         width: 100%
         max-width: 223px
-        margin-top: -5px
         a
             width: 100%
             max-width: 223px
@@ -56,7 +61,7 @@
         color: white
         width: max-content
         margin: auto
-        margin-top: 20px
+        // margin-top: 20px
         padding-bottom: 20px
         font-family: Poppins
         font-weight: 400
@@ -73,8 +78,7 @@
         display: block
         color: white
         width: max-content
-        margin: auto
-        margin-top: 20px
+        margin-top: 8px
         padding-bottom: 10px
         font-family: Poppins
         font-weight: 400
@@ -93,7 +97,7 @@
 @media (max-width:1000px)
     .footer
         &__wrapper
-            width: 90%
+            width: 100%
             margin: auto
             flex-wrap: wrap
         &__navigation
@@ -104,9 +108,14 @@
             margin: auto
             text-align: center
         &__apply-button
+            max-width: 110px
             a
                 font-size: 13px
-@media (max-width:640px)
+        
+        &__email
+            margin-inline: auto
+
+@media (max-width:815px)
     .footer
         &__wrapper
             display: flex
@@ -126,7 +135,11 @@
         &__apply-button
             margin: auto
             margin-bottom: 20px
-@media (min-width: 640px)
+
+        &__email
+            margin-top: 0
+        
+@media (min-width: 815px)
     .footer
         &__navigation
             display: flex
