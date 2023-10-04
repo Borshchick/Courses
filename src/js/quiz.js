@@ -7,32 +7,32 @@ document.addEventListener("DOMContentLoaded", function () {
   const quiz_arr = document.querySelectorAll(".quiz-submit");
   const quiz_blocks = document.querySelectorAll(".quiz-content");
   const quiz_radio = document.querySelectorAll('input[type="radio"]');
-  const quizErrors = document.querySelectorAll('.quiz-error')
+  const quizErrors = document.querySelectorAll(".quiz-error");
   const emailInput = document.querySelector("#first-email");
-  const emailInput2 = document.querySelector("#second-email")
-  const emailError = document.querySelector(".quiz-email-error")
+  const emailInput2 = document.querySelector("#second-email");
+  const emailError = document.querySelector(".quiz-email-error");
   let value; // Змінна для збереження значення обраної радіокнопки
   // Функція для відправлення даних на сервер
   const fetchData = () => {
     const inputs = document.querySelectorAll("input");
-    const values = {};
+    const formData = new FormData();
     inputs.forEach((input) => {
       if (input.type !== "submit") {
         if (input.type === "radio") {
           if (input.checked) {
-            values[input.name] = input.id.startsWith("Yes");
+            formData.append(input.name, input.id.startsWith("Yes"));
           }
         } else {
-          values[input.name] = input.value;
+          formData.append(input.name, input.value);
         }
       }
     });
 
-    console.log(values);
+    console.log(formData);
 
-    fetch("./posts.php", {
+    fetch("/components/sendmail/quiz.php", {
       method: "POST",
-      body: values,
+      body: formData,
     });
   };
   // Додаємо обробник події для радіокнопок
@@ -50,7 +50,9 @@ document.addEventListener("DOMContentLoaded", function () {
     item.addEventListener("click", function () {
       const textInputsInBlock =
         quiz_blocks[index].querySelectorAll(".input-text");
-      const buttons = quiz_blocks[index].querySelectorAll("input[type='radio']");
+      const buttons = quiz_blocks[index].querySelectorAll(
+        "input[type='radio']"
+      );
 
       const areTextInputsFilled =
         textInputsInBlock.length !== 0 &&
@@ -85,23 +87,27 @@ document.addEventListener("DOMContentLoaded", function () {
         quiz_blocks[index].classList.add("d-none");
         quiz_blocks[index + 1].classList.remove("d-none");
         quizErrors.forEach((error) => {
-          error.style.display = 'none'
-        })
+          error.style.display = "none";
+        });
       } else {
         textInputsInBlock.forEach((input) => {
           input.classList.add("error");
-          if(input.type === "email"){
+          if (input.type === "email") {
             const emailValue = emailInput.value.trim();
-            const emailValue2 = emailInput2.value.trim()
-            if (!validateEmail(emailValue || emailValue2) && emailValue !== "" || emailValue2 !== "") {
-              emailError.innerHTML = 'Invalid email'
+            const emailValue2 = emailInput2.value.trim();
+            if (
+              (!validateEmail(emailValue || emailValue2) &&
+                emailValue !== "") ||
+              emailValue2 !== ""
+            ) {
+              emailError.innerHTML = "Invalid email";
               return;
             }
           }
         });
         quizErrors.forEach((error) => {
-          error.style.display = 'block'
-        })
+          error.style.display = "block";
+        });
       }
     });
   });
