@@ -1696,34 +1696,48 @@ video {
   font-size: 10px !important;
   opacity: 0.5;
 }
-.footer__email-wrapper {
+.footer__row {
   display: flex;
-  justify-content: space-around;
   align-items: center;
-}
-.footer__email {
-  display: block;
+  justify-content: space-between;
   color: white;
-  width: max-content;
-  margin-top: 8px;
-  padding-bottom: 10px;
   font-family: Poppins;
   font-weight: 400;
-  display: flex;
-  justify-content: space-around;
+  font-size: 14px;
+  margin-top: 24px;
+  margin-bottom: 18px;
 }
-.footer__email a {
+.footer__row a {
   color: white;
   text-decoration: none;
   font-weight: 600;
   font-size: 14px;
   opacity: 0.8;
 }
-.footer__email a:hover {
+.footer__row a:hover {
   opacity: 1;
   cursor: pointer;
 }
+.footer__row-right {
+  display: flex;
+  aligh-items: center;
+  gap: 70px;
+}
 
+@media (max-width: 1100px) {
+  .footer__row {
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 24px;
+    font-size: 13px;
+  }
+  .footer__row a {
+    font-size: 13px;
+  }
+  .footer__row p {
+    text-align: center;
+  }
+}
 @media (max-width: 1000px) {
   .footer__wrapper {
     width: 100%;

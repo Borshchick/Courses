@@ -66,24 +66,18 @@
         font-family: Poppins
         font-weight: 400
         font-size: 10px !important
-        opacity: .5
-
-    &__email-wrapper 
-        display: flex
-        justify-content: space-around
-        align-items: center
+        opacity: .5        
     
-
-    &__email
-        display: block
+    &__row
+        display: flex
+        align-items: center
+        justify-content: space-between
         color: white
-        width: max-content
-        margin-top: 8px
-        padding-bottom: 10px
         font-family: Poppins
         font-weight: 400
-        display: flex
-        justify-content: space-around
+        font-size: 14px
+        margin-top: 24px
+        margin-bottom: 18px
 
         a
             color: white
@@ -94,6 +88,26 @@
             &:hover
                 opacity: 1
                 cursor: pointer
+    
+    &__row-right
+        display: flex
+        aligh-items: center
+        gap: 70px
+
+@media (max-width:1100px)
+    .footer 
+        &__row
+            flex-direction: column
+            gap: 24px
+            margin-bottom: 24px
+            font-size: 13px
+            
+            a
+                font-size: 13px
+
+            p
+                text-align: center
+
 @media (max-width:1000px)
     .footer
         &__wrapper
