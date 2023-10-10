@@ -9,6 +9,7 @@ var path = {
     css: "dist/css",
     img: "dist/img",
     video: "dist/video",
+    files: "dist/files",
     fonts: "dist/fonts",
     libs: "dist/libs",
   },
@@ -19,6 +20,7 @@ var path = {
     css: "src/css/",
     img: "src/img/**/*.*",
     video: "src/video/**/*.*",
+    files: "src/files/**/*.*",
     fonts: "src/fonts/**/*.*",
   },
   clean: "dist",
@@ -126,17 +128,30 @@ gulp.task("script", (cb) => {
 });
 
 gulp.task("video", (cb) => {
-	return (
-	  gulp
-		.src("src/video/**/*")
-		// .pipe(babel({
-		//     presets: ['@babel/env']
-		// }))
-		.pipe(gulp.dest(path.dist.video))
-		.pipe(browserSync.stream())
-	);
-	cb();
-  });
+  return (
+    gulp
+      .src("src/video/**/*")
+      // .pipe(babel({
+      //     presets: ['@babel/env']
+      // }))
+      .pipe(gulp.dest(path.dist.video))
+      .pipe(browserSync.stream())
+  );
+  cb();
+});
+
+gulp.task("files", (cb) => {
+  return (
+    gulp
+      .src("src/files/**/*")
+      // .pipe(babel({
+      //     presets: ['@babel/env']
+      // }))
+      .pipe(gulp.dest(path.dist.files))
+      .pipe(browserSync.stream())
+  );
+  cb();
+});
 
 gulp.task("images", function (cb) {
   return gulp
@@ -177,7 +192,15 @@ gulp.task("clean", function (cb) {
 gulp.task(
   "dev",
   gulp.series(
-    gulp.parallel(["views", "sass", "script", "images", "fonts","video"]),
+    gulp.parallel([
+      "views",
+      "sass",
+      "script",
+      "images",
+      "fonts",
+      "video",
+      "files",
+    ]),
     gulp.parallel("watch")
   )
 );
@@ -191,11 +214,11 @@ gulp.task(
     "images",
     "fonts",
     "script",
-	"video",
+    "video",
+    "files",
     "build:delhtmlcomm",
     function (done) {
       done();
     }
   )
 );
-
